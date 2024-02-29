@@ -40,10 +40,11 @@ button {
 
 body {
     font-size: 16px;
-    font-family: Calibri;
+    font-family: "Calibri", sans-serif;
     color: var(--clr-neutral-400);
     display: flex;
     flex-direction: column;
+    font-weight: 400;
 }
 
 /* wrapper */
@@ -211,6 +212,8 @@ body {
 .mobile-nav__link {
     text-transform: uppercase;
     font-size: var(--fs-400);
+    display: block;
+    /* height: 10px; */
 }
 
 .mobile-nav__link:hover {
@@ -500,4 +503,83 @@ body {
     font-weight: 100;
 }
 
+@media screen and (max-width: 900px) {
+    .breadcrumb {
+        margin-top: 50px;
+    }
+    .breadcrumb__item {
+        font-size: var(--fs-200);
+    }
+}
+
 /* balaclav section */
+.balaclavs {
+}
+.balaclavs-card-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 58.4px;
+}
+
+@media screen and (max-width: 1700px) {
+    .balaclavs-card-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .balaclavs-card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .balaclavs-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.balaclav-card {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.balaclav-card__img-wrapper {
+    
+}
+.balaclav-card__img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+.balaclav-card__colors-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.balaclav-card__colors {
+    display: flex;
+    gap: 4px;
+}
+.balaclav-card__color {
+    width: 24px;
+    height: 24px;
+    display: block;
+    border-radius: 2px;
+}
+
+.balaclav-card__color--dark {
+    background: var(--clr-neutral-500);
+}
+
+.balaclav-card__color--beige {
+    background: var(--clr-beige-400);
+}
+
+.balaclav-card__color--light-beige {
+    background: var(--clr-beige-500);
+}
+
+
+.balaclav-card__price {
+}
