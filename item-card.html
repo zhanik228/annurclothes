@@ -3,18 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnnurClothes</title>
-    <meta name="description" content="Целомудрие и скромность в женской одедже от Россиийского бренда ANNURCLOTHES">
-    <meta name="keywords" content="одежда,мусульманская,хиджаб,clothes,muslim">
-    <link rel="icon" type="svg" href="./assets/Logo.svg">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <title>AnnurClothes Item</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header wrapper">
+    <header class="header header--active wrapper">
         <nav aria-label="menu navigation" class="header-nav">
             <ul class="header-nav__list">
                 <li class="header-nav__item">
@@ -31,7 +24,7 @@
                                 <a href="#" class="subnav__link">Комплекты:</a>
                                 <ul class="subnav__sublist">
                                     <li class="mobile-subnav__subitem">
-                                        <a href="item-card.html" class="mobile-subnav__sublink">Балаклава и шарф</a>
+                                        <a href="#" class="mobile-subnav__sublink">Балаклава и шарф</a>
                                     </li>
                                     <li class="mobile-subnav__subitem">
                                         <a href="#" class="mobile-subnav__sublink">Четверки и двойки</a>
@@ -245,50 +238,52 @@
         </div>
     </header>
     <main>
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <picture>
-                  <source srcset="./assets/slider/image-3.png" media="(min-width: 900px)"/>
-                  <img src="./assets/slider/image-3mobile.png" alt="slider-img" />
-                </picture> 
-              </div>             
-              <div class="swiper-slide"><img src="./assets/slider/image 4.png" alt="slider-img"></div>
-              <div class="swiper-slide"><img src="./assets/slider/image-3.png" alt="slider-img"></div>
-              <div class="swiper-slide"><img src="./assets/slider/image 4.png" alt="slider-img"></div>
+        <section class="item-section-info wrapper">
+            <div class="item-section-info__images-wrapper">
+                <div class="item-section-info__images">
+                    <img width="120" height="120" src="./assets/Rectangle 306.png" alt="item image" class="item-section-info__img">
+                    <img width="120" height="120" src="./assets/Rectangle 306.png" alt="item image" class="item-section-info__img">
+                    <img width="120" height="120" src="./assets/Rectangle 312complect.png" alt="item image" class="item-section-info__img">
+                </div>
+                <div class="item-section-info__big-img-wrapper">
+                    <img class="item-section-info__big-img" src="./assets/image 5big.png" alt="Big item img">
+                </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-          
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button swiper-button-prev">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 19L5 12L12 5" stroke="#595959" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M19 12H5" stroke="#595959" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+            <div class="item-section-info__data">
+                <h1 class="item-section-info__title">Шарф шелковый</h1>
+                <p class="item-section-info__price">3 500 <span class="item-section-info__price-text">P</span></p>
+                <p class="item-section-info__description">Шарф из чистого шелка 2,50 метра. <br>
+                    Этот вид считается самым тонким, прозрачным, очень нежным и изящным из всех натуральных шёлков. Изготовление этого шелка – исключительно ручная работа, которую выполняют по уникальной технологии.
+                    <br><br>
+                    Это очень сложная работа 🤍</p>
+                <div class="item-section-info__color-wrapper">
+                    <p class="item-section-info__color-title">Цвет: <span class="item-section-info__color-text">Бежевый</span></p>
+                    <div class="item-section-info__colors">
+                        <div class="item-section-info__color item-section-info__color--black"></div>
+                        <div class="item-section-info__color item-section-info__color--beige"></div>
+                        <div class="item-section-info__color item-section-info__color--light-beige"></div>
+                    </div>
+                </div>
+                <div class="item-section-info__buttons">
+                    <a href="#" class="item-section-info__btn primary-btn">
+                        Добавить в корзину
+                    </a>
+                    <a href="#" class="item-section-info__btn primary-btn primary-btn--text">
+                        Добавить в Избранное
+                    </a>
+                </div>
+                <div class="item-section-info__ad">
+                    <div class="item-section-info__ad primary-ad-card">
+                        <img class="primary-ad-card__img" src="./assets/Rectangle 312complect.png" alt="ad image">
+                        <div class="primary-ad-card__content">
+                            <h2 class="primary-ad-card__title">Вы можете приобрести этот товар в комплекте с балаклавой</h2>
+                            <p class="primary-ad-card__subtitle">Комплект балаклава и шарф</p>
+                            <p class="primary-ad-card__price">9 000 <span class="primary-ad-card__price-text">₽</span></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="swiper-button swiper-button-next">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 5L19 12L12 19" stroke="#595959" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M5 12L19 12" stroke="#595959" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    
-            </div>
-          
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>
-          <div class="floating-action-button">
-            <a href="tel:87777777777">
-            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M27.5 21.15V24.9C27.5015 25.2481 27.4301 25.5927 27.2907 25.9117C27.1512 26.2307 26.9467 26.517 26.6901 26.7523C26.4336 26.9877 26.1308 27.1669 25.801 27.2784C25.4712 27.3899 25.1218 27.4313 24.775 27.4C20.9286 26.9821 17.2338 25.6677 13.9875 23.5625C10.9673 21.6433 8.40671 19.0827 6.48754 16.0625C4.37501 12.8015 3.06034 9.08874 2.65004 5.225C2.6188 4.87933 2.65988 4.53095 2.77066 4.20203C2.88145 3.87311 3.0595 3.57086 3.2935 3.31453C3.52749 3.05819 3.81229 2.85339 4.12978 2.71315C4.44726 2.57292 4.79046 2.50033 5.13754 2.5H8.88754C9.49417 2.49403 10.0823 2.70885 10.5422 3.10441C11.0022 3.49998 11.3026 4.04931 11.3875 4.65C11.5458 5.85008 11.8394 7.02841 12.2625 8.1625C12.4307 8.6099 12.4671 9.09614 12.3674 9.5636C12.2677 10.0311 12.0361 10.4601 11.7 10.8L10.1125 12.3875C11.892 15.5169 14.4831 18.1081 17.6125 19.8875L19.2 18.3C19.5399 17.9639 19.969 17.7323 20.4364 17.6326C20.9039 17.5329 21.3901 17.5693 21.8375 17.7375C22.9716 18.1607 24.15 18.4542 25.35 18.6125C25.9572 18.6982 26.5118 19.004 26.9082 19.4719C27.3046 19.9397 27.5152 20.537 27.5 21.15Z" stroke="#595959" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M17.5625 2.5C20.1103 2.76846 22.4902 3.8985 24.3086 5.70323C26.1269 7.50795 27.2749 9.87927 27.5625 12.425" stroke="#595959" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M17.5625 7.5C18.7919 7.74242 19.92 8.34878 20.8005 9.24039C21.6809 10.132 22.2731 11.2677 22.5 12.5" stroke="#595959" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg> 
-            </a>
-          </div>
+        </section>
     </main>
     <footer class="footer">
         <nav class="footer-nav">
