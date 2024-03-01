@@ -60,7 +60,7 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-    .header.wrapper {
+    .wrapper {
         padding: 12px 18px;
     }
 }
@@ -526,6 +526,12 @@ body {
     margin-bottom: 30px;
 }
 
+@media screen and (max-width: 700px) {
+    .breadcrumb {
+        flex-direction: column;
+    }
+}
+
 .breadcrumb.wrapper {
     padding: 12px 34px;
 }
@@ -859,9 +865,26 @@ body {
     column-gap: 6px;
 }
 
+@media screen and (max-width: 1090px) {
+    .lookbook {
+        columns: 3;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .lookbook {
+        columns: 2;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .lookbook {
+        columns: 1;
+    }
+}
+
 .lookbook__box {
-    width: 100%;
-    margin-bottom: 6px;
+    /* margin-bottom: 6px; */
 }
 
 .lookbook__box img {
@@ -869,8 +892,8 @@ body {
     border-radius: 8px;
 }
 
-@media screen and (max-width: 1919px) {
+/* @media screen and (max-width: 1919px) {
     .lookbook {
         columns: 3;
     }
-}
+} */
