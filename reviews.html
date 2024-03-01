@@ -7,6 +7,7 @@
     <meta name="description" content="Целомудрие и скромность в женской одедже от Россиийского бренда ANNURCLOTHES">
     <meta name="keywords" content="одежда,мусульманская,хиджаб,clothes,muslim">
     <link rel="icon" type="image/svg+xml" href="./assets/Logo.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -240,6 +241,53 @@
             <a href="#" role="button">Корзина</a>
         </div>
     </header>
+    <div class="breadcrumb header-offset breadcrumb--mobile wrapper">
+        <a href="#" class="breadcrumb__link">
+            <p class="breadcrumb__item breadcrumb__title">Отзывы</p>
+        </a>
+    </div>
+    <div id="reviews-swiper" class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="./assets/reviews/3.png" alt="review img">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/reviews/1.png" alt="review img">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/reviews/2.png" alt="review img">
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="breadcrumb__link">
+                <p class="breadcrumb__item breadcrumb__title">Осень</p>
+                <span class="breadcrumb__divider"></span>
+                <p class="breadcrumb__item">зима 2021</p>
+            </a>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <!-- <div class="breadcrumb-swiper-pagination"></div> -->
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button primary-swiper-button primary-swiper-button--light swiper-button-prev">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 19L5 12L12 5" stroke="#595959" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19 12H5" stroke="#595959" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="swiper-button primary-swiper-button primary-swiper-button--light swiper-button-next">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5L19 12L12 19" stroke="#595959" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5 12L19 12" stroke="#595959" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+        </div>
+    
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
     <div class="reviews wrapper">
         <img src="./assets/reviews/1.png" alt="review img">
         <img src="./assets/reviews/2.png" alt="review img">
@@ -266,7 +314,7 @@
                     <a href="#" class="footer-nav__link">Пресса</a>
                 </li>
                 <li class="footer-nav__item">
-                    <a href="#" class="footer-nav__link">Отзывы</a>
+                    <a href="reviews.html" class="footer-nav__link">Отзывы</a>
                 </li>
                 <li class="footer-nav__item">
                     <a href="#" class="footer-nav__link">Политика конфиденциальности</a>
@@ -277,5 +325,7 @@
             </ul>
         </nav>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="nav.js"></script>
+    <script src="reviews.js"></script>
 </body>

@@ -76,6 +76,16 @@ body {
     padding-block: 18px;
 }
 
+.header-offset {
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 900px) {
+    .header-offset {
+        margin-top: 52px;
+    }
+}
+
 .header--active {
     background: var(--clr-neutral-300);
 }
@@ -208,6 +218,33 @@ body {
     background: none;
     color: initial;
 }
+
+/* primary swiper buttons */
+.primary-swiper-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--clr-neutral-500);
+    padding: 9px;
+    border-radius: 4px;
+    height: auto;
+    width: auto;
+}
+
+.primary-swiper-button--light {
+    border: 1px solid #fff;
+}
+
+.primary-swiper-button:hover {
+    background: var(--clr-neutral-500);
+}
+
+.primary-swiper-button--light svg path {
+    stroke: #fff;
+    transition: all .3s linear;
+}
+
+
 
 /* mobile nav */
 .mobile-nav {
@@ -387,14 +424,14 @@ body {
 }
 
 #main-swiper .swiper-button {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid var(--clr-neutral-500);
     padding: 9px;
     border-radius: 4px;
     height: auto;
-    width: auto;
+    width: auto; */
 }
 
 #main-swiper .swiper-button:hover {
@@ -452,6 +489,56 @@ body {
         object-fit: cover;
         height: 100vh;
         display: block;
+    }
+}
+
+#reviews-swiper {
+    width: calc(100% - 36px);
+    border-radius: 6px;
+    margin-bottom: 100px;
+    height: 620px;
+}
+
+@media screen and (max-width: 300px) {
+    #reviews-swiper {
+        width: 100%;
+        height: 620px;
+    }
+}
+
+#reviews-swiper .swiper-scrollbar {
+    display: none;
+}
+
+#reviews-swiper .swiper-button-prev::after {
+    display: none;
+}
+
+#reviews-swiper .swiper-button-next::after {
+    display: none;
+}
+
+#reviews-swiper .swiper-wrapper .swiper-slide {
+    
+}
+
+#reviews-swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    height: 620px;
+}
+
+@media screen and (max-width: 900px) {
+    #reviews-swiper .primary-swiper-button--light {
+        border: 1px solid var(--clr-neutral-400);
+    }
+    #reviews-swiper .swiper-button svg path {
+        stroke: var(--clr-neutral-400);
+        transition: all .3s linear;
+    }
+    #reviews-swiper .primary-swiper-button--light:hover svg path{
+        stroke: #fff;
     }
 }
 
@@ -958,6 +1045,6 @@ body {
 
 @media screen and (max-width: 900px) {
     .reviews {
-        padding-top: 108px;
+        display: none;
     }
 }
