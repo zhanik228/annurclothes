@@ -938,6 +938,8 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
+    column-gap: 6px;
+    row-gap: 6px;
 }
 
 @media screen and (max-width: 900px) {
