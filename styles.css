@@ -542,6 +542,19 @@ body {
     }
 }
 
+@media screen and (max-width: 400px) {
+    #reviews-swiper .primary-swiper-button--light {
+        border: 1px solid #fff;
+    }
+    #reviews-swiper .swiper-button svg path {
+        stroke: #fff;
+        transition: all .3s linear;
+    }
+    #reviews-swiper .primary-swiper-button--light:hover svg path{
+        stroke: var(--clr-neutral-400);
+    }
+}
+
 /* phone button */
 .floating-action-button {
     position: fixed;
