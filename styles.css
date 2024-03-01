@@ -371,22 +371,22 @@ body {
 }
 
 /* slider */
-.swiper {
+#main-swiper {
     width: calc(100% - 68px);
     max-height: 1012px;
     border-radius: 12px;
     position: relative;
 }
 
-.swiper-wrapper {
+#main-swiper .swiper-wrapper {
     position: relative;
 }
 
-.swiper-scrollbar {
+#main-swiper .swiper-scrollbar {
     display: none;
 }
 
-.swiper-button {
+#main-swiper .swiper-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -397,31 +397,31 @@ body {
     width: auto;
 }
 
-.swiper-button:hover {
+#main-swiper .swiper-button:hover {
     background: var(--clr-neutral-500);
 }
 
-.swiper-button-prev {
+#main-swiper .swiper-button-prev {
     left: 34px;
     border-radius: 4px;
     height: auto;
     width: auto;
 }
 
-.swiper-button:hover svg path {
+#main-swiper .swiper-button:hover svg path {
     stroke: #fff;
     transition: all .3s linear;
 }
 
-.swiper-button::after {
+#main-swiper .swiper-button::after {
     display: none;
 }
 
-.swiper-button-next {
+#main-swiper .swiper-button-next {
     right: 34px;
 }
 
-.swiper-slide img {
+#main-swiper .swiper-slide img {
     width: 100%;
     display: block;
     object-fit: cover;
@@ -429,25 +429,25 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-    .swiper {
+    #main-swiper {
         width: 100%;
         min-height: 100vh;
         border-radius: 0;
     }
-    .swiper-slide {
+    #main-swiper .swiper-slide {
         width: 100%;
         height: 100vh;
     }
-    .swiper-button-prev,
-    .swiper-button-next {
+    #main-swiper .swiper-button-prev,
+    #main-swiper .swiper-button-next {
         display: none;
     }
-    .swiper-slide picture img {
+    #main-swiper .swiper-slide picture img {
         object-position: top center;
         object-fit: cover;
         height: 100%;
     }
-    .swiper-slide img {
+    #main-swiper .swiper-slide img {
         object-position: center;
         object-fit: cover;
         height: 100vh;
@@ -583,10 +583,18 @@ body {
 #breadcrumb-swiper {
     /* width: 100%; */
     /* display: block; */
-    margin: 12px 18px;
+    margin: 12px 0px 12px 18px;
     min-height:28px!important;
     display: none;
 }
+
+#breadcrumb-swiper .swiper-scrollbar {
+    display: none;
+}
+
+/* #breadcrumb-swiper .swiper-wrapper .swiper-slide {
+    display: inline-block;
+} */
 
 @media screen and (min-width: 900px) {
     #breadcrumb-swiper {
@@ -607,6 +615,9 @@ body {
     }
     #breadcrumb-swiper {
         display: flex;
+    }
+    .breadcrumb__link {
+        gap: 4px;
     }
 }
 
