@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnnurClothes - Balaclavs</title>
+    <title>AnnurClothes - Lookbook</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -89,7 +89,7 @@
                     </nav>
                 </li>
                 <li class="header-nav__item">
-                    <a class="header-nav__link" href="#">Lookbook</a>
+                    <a class="header-nav__link header-nav__link--active" href="lookbook.html">Lookbook</a>
                     </li>
                 <li class="header-nav__item">
                     <a class="header-nav__link" href="#">Блог</a>
@@ -109,7 +109,7 @@
                     <a id="shop" class="mobile-nav__link" href="#">Магазин</a>
                 </li>
                 <li class="mobile-nav__item">
-                    <a class="mobile-nav__link" href="#">Lookbook</a>
+                    <a class="mobile-nav__link" href="lookbook.html">Lookbook</a>
                     </li>
                 <li class="mobile-nav__item">
                     <a class="mobile-nav__link" href="#">Блог</a>
@@ -154,7 +154,7 @@
         <div class="mobile-subnav-wrapper">
             <h2 class="mobile-subnav__title">Магазин</h2>
             <nav class="mobile-subnav">
-                <img alt="mobile nav close" src="./assets/xcross.svg" class="mobile-subnav__close">
+                <img alt="mobile subnav close" src="./assets/xcross.svg" class="mobile-subnav__close">
                 <ul class="mobile-subnav__list subnav-list">
                     <li class="mobile-subnav__item">
                         <a href="balaclavs.html" class="subnav__link">Балаклавы</a>
@@ -237,185 +237,41 @@
             <a href="#" role="button">Корзина</a>
         </div>
     </header>
-    <section class="breadcrumb wrapper">
-        <a href="#" class="breadcrumb__link">
-            <p class="breadcrumb__item breadcrumb__title">Главная</p>
+    <div class="breadcrumb wrapper">
+        <a href="#" class="breadcrumb__link breadcrumb__link--active">
+            <p class="breadcrumb__item breadcrumb__title">Весная</p>
             <span class="breadcrumb__divider"></span>
-            <p class="breadcrumb__item">Балаклавы</p>
+            <p class="breadcrumb__item">лето 2019</p>
         </a>
-    </section>
-    <section class="balaclavs wrapper">
-        <ul class="balaclavs-card-grid">
-            <li class="balaclav-card">
-                <div class="balaclav-card__img-wrapper">
-                    <img src="./assets/balaclavs/1.png" class="balaclav-card__img" alt="balaclav">
-                </div>
-                <div class="balaclav-card__colors-wrapper">
-                    <div class="balaclav-card__colors">
-                        <div class="balaclav-card__color balaclav-card__color--dark"></div>
-                        <div class="balaclav-card__color balaclav-card__color--beige"></div>
-                        <div class="balaclav-card__color balaclav-card__color--light-beige"></div>
-                    </div>
-                    <p class="balaclav-card__price">1 000 <span class="balaclav-card__price-text">₽</span></p>
-                </div>
-                <h2 class="balaclav-card__title">Балаклава</h2>
-            </li>
-            <li class="balaclav-card">
-                <div class="balaclav-card__img-wrapper">
-                    <img src="./assets/balaclavs/2.png" class="balaclav-card__img" alt="balaclav">
-                </div>
-                <div class="balaclav-card__colors-wrapper">
-                    <div class="balaclav-card__colors">
-                        <div class="balaclav-card__color balaclav-card__color--dark"></div>
-                        <div class="balaclav-card__color balaclav-card__color--beige"></div>
-                        <div class="balaclav-card__color balaclav-card__color--light-beige"></div>
-                    </div>
-                    <p class="balaclav-card__price">1 000 <span class="balaclav-card__price-text">₽</span></p>
-                </div>
-                <h2 class="balaclav-card__title">Балаклава</h2>
-            </li>
-            <li class="balaclav-card">
-                <div class="balaclav-card__img-wrapper">
-                    <img src="./assets/balaclavs/3.png" class="balaclav-card__img" alt="balaclav">
-                </div>
-                <div class="balaclav-card__colors-wrapper">
-                    <div class="balaclav-card__colors">
-                        <div class="balaclav-card__color balaclav-card__color--dark"></div>
-                        <div class="balaclav-card__color balaclav-card__color--beige"></div>
-                        <div class="balaclav-card__color balaclav-card__color--light-beige"></div>
-                    </div>
-                    <p class="balaclav-card__price">1 000 <span class="balaclav-card__price-text">₽</span></p>
-                </div>
-                <h2 class="balaclav-card__title">Балаклава</h2>
-            </li>
-            <li class="balaclav-card">
-                <div class="balaclav-card__img-wrapper">
-                    <img src="./assets/balaclavs/4.png" class="balaclav-card__img" alt="balaclav">
-                </div>
-                <div class="balaclav-card__colors-wrapper">
-                    <div class="balaclav-card__colors">
-                        <div class="balaclav-card__color balaclav-card__color--dark"></div>
-                        <div class="balaclav-card__color balaclav-card__color--beige"></div>
-                        <div class="balaclav-card__color balaclav-card__color--light-beige"></div>
-                    </div>
-                    <p class="balaclav-card__price">1 000 <span class="balaclav-card__price-text">₽</span></p>
-                </div>
-                <h2 class="balaclav-card__title">Балаклава</h2>
-            </li>
-            <li class="balaclav-card">
-                <div class="balaclav-card__img-wrapper">
-                    <img src="./assets/balaclavs/5.png" class="balaclav-card__img" alt="balaclav">
-                </div>
-                <div class="balaclav-card__colors-wrapper">
-                    <div class="balaclav-card__colors">
-                        <div class="balaclav-card__color balaclav-card__color--dark"></div>
-                        <div class="balaclav-card__color balaclav-card__color--beige"></div>
-                        <div class="balaclav-card__color balaclav-card__color--light-beige"></div>
-                    </div>
-                    <p class="balaclav-card__price">1 000 <span class="balaclav-card__price-text">₽</span></p>
-                </div>
-                <h2 class="balaclav-card__title">Балаклава</h2>
-            </li>
-            <li class="balaclav-card">
-                <div class="balaclav-card__img-wrapper">
-                    <img src="./assets/balaclavs/6.png" class="balaclav-card__img" alt="balaclav">
-                </div>
-                <div class="balaclav-card__colors-wrapper">
-                    <div class="balaclav-card__colors">
-                        <div class="balaclav-card__color balaclav-card__color--dark"></div>
-                        <div class="balaclav-card__color balaclav-card__color--beige"></div>
-                        <div class="balaclav-card__color balaclav-card__color--light-beige"></div>
-                    </div>
-                    <p class="balaclav-card__price">1 000 <span class="balaclav-card__price-text">₽</span></p>
-                </div>
-                <h2 class="balaclav-card__title">Балаклава</h2>
-            </li>
-            <li class="balaclav-card">
-                <div class="balaclav-card__img-wrapper">
-                    <img src="./assets/balaclavs/7.png" class="balaclav-card__img" alt="balaclav">
-                </div>
-                <div class="balaclav-card__colors-wrapper">
-                    <div class="balaclav-card__colors">
-                        <div class="balaclav-card__color balaclav-card__color--dark"></div>
-                        <div class="balaclav-card__color balaclav-card__color--beige"></div>
-                        <div class="balaclav-card__color balaclav-card__color--light-beige"></div>
-                    </div>
-                    <p class="balaclav-card__price">1 000 <span class="balaclav-card__price-text">₽</span></p>
-                </div>
-                <h2 class="balaclav-card__title">Балаклава</h2>
-            </li>
-            <li class="balaclav-card">
-                <div class="balaclav-card__img-wrapper">
-                    <img src="./assets/balaclavs/8.png" class="balaclav-card__img" alt="balaclav">
-                </div>
-                <div class="balaclav-card__colors-wrapper">
-                    <div class="balaclav-card__colors">
-                        <div class="balaclav-card__color balaclav-card__color--dark"></div>
-                        <div class="balaclav-card__color balaclav-card__color--beige"></div>
-                        <div class="balaclav-card__color balaclav-card__color--light-beige"></div>
-                    </div>
-                    <p class="balaclav-card__price">1 000 <span class="balaclav-card__price-text">₽</span></p>
-                </div>
-                <h2 class="balaclav-card__title">Балаклава</h2>
-            </li>
-            <li class="balaclav-card">
-                <div class="balaclav-card__img-wrapper">
-                    <img src="./assets/balaclavs/9.png" class="balaclav-card__img" alt="balaclav">
-                </div>
-                <div class="balaclav-card__colors-wrapper">
-                    <div class="balaclav-card__colors">
-                        <div class="balaclav-card__color balaclav-card__color--dark"></div>
-                        <div class="balaclav-card__color balaclav-card__color--beige"></div>
-                        <div class="balaclav-card__color balaclav-card__color--light-beige"></div>
-                    </div>
-                    <p class="balaclav-card__price">1 000 <span class="balaclav-card__price-text">₽</span></p>
-                </div>
-                <h2 class="balaclav-card__title">Балаклава</h2>
-            </li>
-            <li class="balaclav-card">
-                <div class="balaclav-card__img-wrapper">
-                    <img src="./assets/balaclavs/10.png" class="balaclav-card__img" alt="balaclav">
-                </div>
-                <div class="balaclav-card__colors-wrapper">
-                    <div class="balaclav-card__colors">
-                        <div class="balaclav-card__color balaclav-card__color--dark"></div>
-                        <div class="balaclav-card__color balaclav-card__color--beige"></div>
-                        <div class="balaclav-card__color balaclav-card__color--light-beige"></div>
-                    </div>
-                    <p class="balaclav-card__price">1 000 <span class="balaclav-card__price-text">₽</span></p>
-                </div>
-                <h2 class="balaclav-card__title">Балаклава</h2>
-            </li>
-            <li class="balaclav-card">
-                <div class="balaclav-card__img-wrapper">
-                    <img src="./assets/balaclavs/11.png" class="balaclav-card__img" alt="balaclav">
-                </div>
-                <div class="balaclav-card__colors-wrapper">
-                    <div class="balaclav-card__colors">
-                        <div class="balaclav-card__color balaclav-card__color--dark"></div>
-                        <div class="balaclav-card__color balaclav-card__color--beige"></div>
-                        <div class="balaclav-card__color balaclav-card__color--light-beige"></div>
-                    </div>
-                    <p class="balaclav-card__price">1 000 <span class="balaclav-card__price-text">₽</span></p>
-                </div>
-                <h2 class="balaclav-card__title">Балаклава</h2>
-            </li>
-            <li class="balaclav-card">
-                <div class="balaclav-card__img-wrapper">
-                    <img src="./assets/balaclavs/12.png" class="balaclav-card__img" alt="balaclav">
-                </div>
-                <div class="balaclav-card__colors-wrapper">
-                    <div class="balaclav-card__colors">
-                        <div class="balaclav-card__color balaclav-card__color--dark"></div>
-                        <div class="balaclav-card__color balaclav-card__color--beige"></div>
-                        <div class="balaclav-card__color balaclav-card__color--light-beige"></div>
-                    </div>
-                    <p class="balaclav-card__price">1 000 <span class="balaclav-card__price-text">₽</span></p>
-                </div>
-                <h2 class="balaclav-card__title">Балаклава</h2>
-            </li>
-        </ul>
-    </section>
+        <a href="#" class="breadcrumb__link">
+            <p class="breadcrumb__item breadcrumb__title">Осень</p>
+            <span class="breadcrumb__divider"></span>
+            <p class="breadcrumb__item">зима 2020</p>
+        </a>
+        <a href="#" class="breadcrumb__link">
+            <p class="breadcrumb__item breadcrumb__title">Весная</p>
+            <span class="breadcrumb__divider"></span>
+            <p class="breadcrumb__item">Лето 2020</p>
+        </a>
+        <a href="#" class="breadcrumb__link">
+            <p class="breadcrumb__item breadcrumb__title">Весная</p>
+            <span class="breadcrumb__divider"></span>
+            <p class="breadcrumb__item">лето 2019</p>
+        </a>
+    </div>
+    <div class="lookbook wrapper">
+        <div class="lookbook__box">
+            <img src="./assets/lookbook/vesna-leto/1.png" alt="lookbook img">
+            <img src="./assets/lookbook/vesna-leto/2.png" alt="lookbook img">
+            <img src="./assets/lookbook/vesna-leto/3.png" alt="lookbook img">
+            <img src="./assets/lookbook/vesna-leto/4.png" alt="lookbook img">
+            <img src="./assets/lookbook/vesna-leto/5.png" alt="lookbook img">
+            <img src="./assets/lookbook/vesna-leto/6.png" alt="lookbook img">
+            <img src="./assets/lookbook/vesna-leto/7.png" alt="lookbook img">
+            <img src="./assets/lookbook/vesna-leto/8.png" alt="lookbook img">
+            <img src="./assets/lookbook/vesna-leto/9.png" alt="lookbook img">
+        </div>
+    </div>
     <footer class="footer">
         <nav class="footer-nav">
             <ul class="footer-nav__list">
@@ -443,7 +299,5 @@
             </ul>
         </nav>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="index.js"></script>
 </body>
 </html>

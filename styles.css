@@ -116,6 +116,10 @@ body {
     font-size: var(--fs-200);
 }
 
+.header-nav__link--active {
+    font-weight: 700;
+}
+
 .header-nav__item--dropdown-toggle:hover .shop-nav {
     height: auto;
     opacity: 1;
@@ -518,7 +522,7 @@ body {
 .breadcrumb {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 30px;
     margin-bottom: 30px;
 }
 
@@ -537,6 +541,16 @@ body {
     text-transform: uppercase;
     color: var(--clr-neutral-400);
     font-weight: 100;
+}
+
+.breadcrumb__link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.breadcrumb__link--active .breadcrumb__item {
+    font-weight: 700;
 }
 
 @media screen and (max-width: 900px) {
@@ -836,5 +850,27 @@ body {
     .item-section-info__big-img {
         width: 100%;
         height: auto;
+    }
+}
+/* lookbook */
+.lookbook {
+    width: 100%;
+    columns: 5;
+    column-gap: 6px;
+}
+
+.lookbook__box {
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+.lookbook__box img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 1919px) {
+    .lookbook {
+        columns: 3;
     }
 }
