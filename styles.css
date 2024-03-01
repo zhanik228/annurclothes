@@ -62,7 +62,7 @@ body {
 
 @media screen and (max-width: 900px) {
     .wrapper {
-        padding: 12px 18px;
+        padding: 0 18px;
     }
 }
 
@@ -73,6 +73,7 @@ body {
     align-items: center;
     position: relative;
     z-index: 99;
+    padding-block: 18px;
 }
 
 .header--active {
@@ -529,12 +530,12 @@ body {
 
 @media screen and (max-width: 700px) {
     .breadcrumb {
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 }
 
-.breadcrumb.wrapper {
-    padding: 12px 34px;
+.breadcrumb {
+    padding-block: 12px;
 }
 
 .breadcrumb__divider {
@@ -555,6 +556,8 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
+    white-space: nowrap;
+    /* border: 1px solid red; */
 }
 
 .breadcrumb__link--active .breadcrumb__item {
@@ -565,9 +568,39 @@ body {
     font-size: var(--fs-250);
 }
 
+.breadcrumb--mobile .breadcrumb__item {
+    color: var(--clr-neutral-700);
+    font-size: var(--fs-200);
+}
+
+.breadcrumb--mobile {
+    margin-bottom: 12px;
+    align-items: start;
+    display: none;
+}
+
+.breadcrumb-swiper {
+    /* width: 100%; */
+    /* display: block; */
+    padding: 0 18px;
+}
+
+.breadcrumb-swiper .swiper-wrapper {
+    /* width: 100%; */
+}
+
+.breadcrumb-swiper .swiper-wrapper .swiper-slide {
+    width: 100%!important;
+    height: auto;
+}
+
 @media screen and (max-width: 900px) {
-    .breadcrumb {
+    .breadcrumb--mobile {
+        display: flex;
         margin-top: 50px;
+    }
+    .breadcrumb--sm {
+        flex-direction: column;
     }
     .breadcrumb__item {
         font-size: var(--fs-200);
@@ -898,8 +931,17 @@ body {
     border-radius: 8px;
 }
 
-/* @media screen and (max-width: 1919px) {
-    .lookbook {
-        columns: 3;
+/* reviews */
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .reviews {
+        padding-top: 108px;
     }
-} */
+}
