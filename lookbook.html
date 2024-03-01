@@ -7,6 +7,7 @@
     <meta name="description" content="Целомудрие и скромность в женской одедже от Россиийского бренда ANNURCLOTHES">
     <meta name="keywords" content="одежда,мусульманская,хиджаб,clothes,muslim">
     <link rel="icon" type="image/svg+xml" href="./assets/Logo.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -246,6 +247,49 @@
         </a>
     </div>
     <!-- Slider main container -->
+    <div class="swiper" id="breadcrumb-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <a href="#" class="breadcrumb__link breadcrumb__link--active">
+                <p class="breadcrumb__item breadcrumb__title">Весная</p>
+                <span class="breadcrumb__divider"></span>
+                <p class="breadcrumb__item">лето 2019</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="breadcrumb__link">
+                <p class="breadcrumb__item breadcrumb__title">Осень</p>
+                <span class="breadcrumb__divider"></span>
+                <p class="breadcrumb__item">зима 2020</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="breadcrumb__link">
+                <p class="breadcrumb__item breadcrumb__title">Весная</p>
+                <span class="breadcrumb__divider"></span>
+                <p class="breadcrumb__item">Лето 2020</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="breadcrumb__link">
+                <p class="breadcrumb__item breadcrumb__title">Осень</p>
+                <span class="breadcrumb__divider"></span>
+                <p class="breadcrumb__item">зима 2021</p>
+            </a>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="breadcrumb-swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="breadcrumb-swiper-button-prev"></div>
+        <div class="breadcrumb-swiper-button-next"></div>
+    
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
   
     <div class="breadcrumb breadcrumb--sm wrapper">
         <a href="#" class="breadcrumb__link breadcrumb__link--active">
@@ -264,9 +308,9 @@
             <p class="breadcrumb__item">Лето 2020</p>
         </a>
         <a href="#" class="breadcrumb__link">
-            <p class="breadcrumb__item breadcrumb__title">Весная</p>
+            <p class="breadcrumb__item breadcrumb__title">Осень</p>
             <span class="breadcrumb__divider"></span>
-            <p class="breadcrumb__item">лето 2019</p>
+            <p class="breadcrumb__item">зима 2021</p>
         </a>
     </div>
     <div class="lookbook wrapper">
@@ -327,6 +371,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="nav.js"></script>
-    <!-- <script src="breadcrumb.js"></script> -->
+    <script src="breadcrumb.js"></script>
 </body>
 </html>

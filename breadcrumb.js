@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var swiper = new Swiper('.breadcrumb-swiper', {
+    var swiper = new Swiper('#breadcrumb-swiper', {
       // Optional parameters
       direction: 'horizontal',
-      loop: true,
-      autoplay: {
-        delay: 5000
-      },
-      slidesPerView: 1, // Initially determine the number of slides per view
+      loop: false,
+    //   autoplay: {
+    //     delay: 5000
+    //   },
+      slidesPerView: 2, // Initially determine the number of slides per view
       slidesPerGroup: 1, // Initially determine the number of slides per group
-    //   slidesOffsetAfter: 50,
+    //   slidesOffsetAfter: -550,
     //   spaceBetween: 2,
   
     //   If we need pagination
