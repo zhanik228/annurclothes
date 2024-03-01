@@ -12,6 +12,7 @@
     --clr-neutral-1000: #010101;
 
     --fs-200: .75rem;
+    --fs-250: .8125rem;
     --fs-300: .875rem;
     --fs-400: 1rem;
     --fs-450: 1.125rem;
@@ -547,6 +548,7 @@ body {
     text-transform: uppercase;
     color: var(--clr-neutral-400);
     font-weight: 100;
+    font-size: var(--fs-300);
 }
 
 .breadcrumb__link {
@@ -557,6 +559,10 @@ body {
 
 .breadcrumb__link--active .breadcrumb__item {
     font-weight: 700;
+}
+
+.breadcrumb--sm .breadcrumb__item {
+    font-size: var(--fs-250);
 }
 
 @media screen and (max-width: 900px) {
