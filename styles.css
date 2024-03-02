@@ -1217,10 +1217,12 @@ body {
     max-width: 652px;
 }
 
-.blog__img-wrapper {
-    width: 100%;
-}
-
-.blog__img-wrapper img {
-    width: 100%;
+@media screen and (max-width: 900px) {
+    .blog__img-wrapper {
+        width: 100%;
+    }
+    
+    .blog__img-wrapper img {
+        width: 100%;
+    }   
 }
