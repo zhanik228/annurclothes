@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var swiper = new Swiper("#main-swiper", {
+  var swiper = new Swiper("#blogs-swiper", {
     // Optional parameters
     direction: "horizontal",
     loop: true,
     autoplay: {
       delay: 5000,
     },
-    slidesPerView: determineSlidesPerView(), // Initially determine the number of slides per view
-    slidesPerGroup: determineSlidesPerGroup(), // Initially determine the number of slides per group
+    slidesPerView: 1, // Initially determine the number of slides per view
+    slidesPerGroup: 1, // Initially determine the number of slides per group
 
     // If we need pagination
     // pagination: {

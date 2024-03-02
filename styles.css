@@ -16,6 +16,7 @@
     --fs-300: .875rem;
     --fs-400: 1rem;
     --fs-450: 1.125rem;
+    --fs-470: 1.5rem;
     --fs-500: 2.5rem;
     --fs-600: 2.25rem;
     --fs-700: 3rem;
@@ -1144,11 +1145,50 @@ body {
 
 @media screen and (max-width: 900px) {
     .blogs {
-        display: block;
+        margin-top: 105px;
+        flex-direction: column;
     }
 }
 
 .blogs__title {
+    font-size: var(--fs-470);
 }
 .blogs__description {
+}
+
+#blogs-swiper {
+    margin-inline: 18px;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+
+#blogs-swiper .primary-swiper-button {
+    top: auto;
+    bottom: 10px;
+}
+
+#blogs-swiper .swiper-button::after {
+    display: none;
+}
+
+#blogs-swiper .swiper-scrollbar {
+    display: none;
+}
+
+/* .blogs__img  {
+    width: 100%;
+} */
+
+@media screen and (max-width: 500px) {
+    #blogs-swiper {
+        margin-top: 105px;
+    }
+    .blogs__img-wrapper {
+        width: 100%;
+        height: 187px;
+    }
+    .blogs__img {
+        width: 100%;
+        height: 187px;
+    }
 }
