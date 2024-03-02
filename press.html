@@ -243,69 +243,51 @@
     </header>
     <div class="breadcrumb header-offset breadcrumb--mobile wrapper">
         <a href="#" class="breadcrumb__link">
-            <p class="breadcrumb__item breadcrumb__title">Отзывы</p>
+            <p class="breadcrumb__item breadcrumb__title">Пресса</p>
         </a>
     </div>
-    <div id="reviews-swiper" class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <img src="./assets/reviews/3.png" alt="review img">
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/reviews/1.png" alt="review img">
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/reviews/2.png" alt="review img">
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/reviews/4.png" alt="review img">
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/reviews/5.png" alt="review img">
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/reviews/6.png" alt="review img">
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/reviews/7.png" alt="review img">
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/reviews/8.png" alt="review img">
-          </div>
+    <main class="main press-main">
+        <div class="press wrapper">
+            <div class="press-images">
+                <img class="press-images__img" src="./assets/press/1.png" alt="press img">
+                <img class="press-images__img" src="./assets/press/2.png" alt="press img">
+                <img class="press-images__img" src="./assets/press/3.png" alt="press img">
+                <img class="press-images__img" src="./assets/press/4.png" alt="press img">
+            </div>
         </div>
-        <!-- If we need pagination -->
-        <!-- <div class="breadcrumb-swiper-pagination"></div> -->
-    
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button primary-swiper-button primary-swiper-button--light swiper-button-prev">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 19L5 12L12 5" stroke="#595959" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M19 12H5" stroke="#595959" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </div>
-        <div class="swiper-button primary-swiper-button primary-swiper-button--light swiper-button-next">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 5L19 12L12 19" stroke="#595959" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M5 12L19 12" stroke="#595959" stroke-linecap="round" stroke-linejoin="round"/>
+        <div id="press-swiper" class="swiper wrapper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img width="341" height="529" src="./assets/press/slider/1.png" alt="review img">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/press/slider/2.png" alt="review img">
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="breadcrumb-swiper-pagination"></div> -->
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button primary-swiper-button primary-swiper-button--light swiper-button-prev">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 19L5 12L12 5" stroke="#595959" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M19 12H5" stroke="#595959" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                
-        </div>
-    
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-      </div>
-    <div class="reviews wrapper">
-        <img src="./assets/reviews/1.png" alt="review img">
-        <img src="./assets/reviews/2.png" alt="review img">
-        <img src="./assets/reviews/3.png" alt="review img">
-        <img src="./assets/reviews/4.png" alt="review img">
-        <img src="./assets/reviews/5.png" alt="review img">
-        <img src="./assets/reviews/6.png" alt="review img">
-        <img src="./assets/reviews/7.png" alt="review img">
-        <img src="./assets/reviews/8.png" alt="review img">
-    </div>
+            </div>
+            <div class="swiper-button primary-swiper-button primary-swiper-button--light swiper-button-next">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5L19 12L12 19" stroke="#595959" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5 12L19 12" stroke="#595959" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+            </div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+    </main>
     <footer class="footer">
         <nav class="footer-nav">
             <ul class="footer-nav__list">
@@ -335,5 +317,5 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="nav.js"></script>
-    <script src="reviews.js"></script>
+    <script src="press.js"></script>
 </body>
