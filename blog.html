@@ -241,97 +241,39 @@
             <a href="#" role="button">Корзина</a>
         </div>
     </header>
-    <main class="blogs-main">
-        <div id="blogs-swiper" class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper" id="slider-main-page">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <section class="blogs wrapper">
-                    <div class="blogs__img-wrapper">
-                        <picture>
-                            <source srcset="./assets/blogs/1.png" media="(min-width: 900px)">
-                            <img class="blogs__img" src="./assets/blogs/mobile/1.png" alt="blog img">
-                          </picture> 
-                        <!-- <img class="blogs__img" src="./assets/blogs/1.png" alt="blog img"> -->
-                    </div>
-                    <div class="blogs__content">
-                        <h2 class="blogs__title">ЦЕЛОМУДРИЕ И СКРОМНОСТЬ В ЖЕНСКОЙ ОДЕЖДЕ ОТ РОССЙСКОГО БРЕНДА «ANNURCLOTHES»</h2>
-                        <p class="blogs__description">Хотим рассказать вам о необычном российском бренде 
-                            одежды, который укладывается в рамки Casual, но несколько выбивается из 
-                            привычного представления о повседневной одежды.  А связано это с тем, 
-                            что философия марки построена на законах шариата.</p>
-                        <a href="blog.html" class="primary-btn primary-btn--lg">Читать статью</a>
-                    </div>
-                </section>
-              </div>             
-              <div class="swiper-slide">
-                <section class="blogs wrapper">
-                    <div class="blogs__img-wrapper">
-                        <img class="blogs__img" src="./assets/blogs/1.png" alt="blog img">
-                    </div>
-                    <div class="blogs__content">
-                        <h2 class="blogs__title">ЦЕЛОМУДРИЕ И СКРОМНОСТЬ В ЖЕНСКОЙ ОДЕЖДЕ ОТ РОССЙСКОГО БРЕНДА «ANNURCLOTHES»</h2>
-                        <p class="blogs__description">Хотим рассказать вам о необычном российском бренде 
-                            одежды, который укладывается в рамки Casual, но несколько выбивается из 
-                            привычного представления о повседневной одежды.  А связано это с тем, 
-                            что философия марки построена на законах шариата.</p>
-                        <a href="blog.html" class="primary-btn primary-btn--lg">Читать статью</a>
-                    </div>
-                </section>
-              </div>
-              <div class="swiper-slide">
-                <section class="blogs wrapper">
-                    <div class="blogs__img-wrapper">
-                        <img class="blogs__img" src="./assets/blogs/1.png" alt="blog img">
-                    </div>
-                    <div class="blogs__content">
-                        <h2 class="blogs__title">ЦЕЛОМУДРИЕ И СКРОМНОСТЬ В ЖЕНСКОЙ ОДЕЖДЕ ОТ РОССЙСКОГО БРЕНДА «ANNURCLOTHES»</h2>
-                        <p class="blogs__description">Хотим рассказать вам о необычном российском бренде 
-                            одежды, который укладывается в рамки Casual, но несколько выбивается из 
-                            привычного представления о повседневной одежды.  А связано это с тем, 
-                            что философия марки построена на законах шариата.</p>
-                        <button class="primary-btn primary-btn--lg">Читать статью</button>
-                    </div>
-                </section>
-              </div>
-              <div class="swiper-slide">
-                <section class="blogs wrapper">
-                    <div class="blogs__img-wrapper">
-                        <img class="blogs__img" src="./assets/blogs/1.png" alt="blog img">
-                    </div>
-                    <div class="blogs__content">
-                        <h2 class="blogs__title">ЦЕЛОМУДРИЕ И СКРОМНОСТЬ В ЖЕНСКОЙ ОДЕЖДЕ ОТ РОССЙСКОГО БРЕНДА «ANNURCLOTHES»</h2>
-                        <p class="blogs__description">Хотим рассказать вам о необычном российском бренде 
-                            одежды, который укладывается в рамки Casual, но несколько выбивается из 
-                            привычного представления о повседневной одежды.  А связано это с тем, 
-                            что философия марки построена на законах шариата.</p>
-                        <a href="blog.html" class="primary-btn primary-btn--lg">Читать статью</a>
-                    </div>
-                </section>
-              </div>
+    <main class="blog-main">
+        <div class="breadcrumb breadcrumb--mobile wrapper">
+            <a href="#" class="breadcrumb__link">
+                <p class="breadcrumb__item breadcrumb__title">Блог</p>
+            </a>
+        </div>
+        <section class="blog header-offset">
+            <div class="blog__img-wrapper">
+                <picture>
+                    <source srcset="./assets/blogs/blog/1.png" media="(min-width: 900px)">
+                    <img class="blog__img" src="./assets/blogs/blog/mobile1.png" alt="blog img">
+                  </picture> 
+                <!-- <img class="blogs__img" src="./assets/blogs/1.png" alt="blog img"> -->
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-          
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button primary-swiper-button swiper-button-prev">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 19L5 12L12 5" stroke="#595959" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M19 12H5" stroke="#595959" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+            <div class="blog__content">
+                <h2 class="blog__title">ЦЕЛОМУДРИЕ И СКРОМНОСТЬ В ЖЕНСКОЙ ОДЕЖДЕ ОТ РОССЙСКОГО БРЕНДА «ANNURCLOTHES»</h2>
+                <p class="blog__description">
+                    Хотим рассказать вам о необычном российском бренде одежды, который укладывается в рамки Casual, но несколько выбивается из привычного представления о повседневной одежды.  А связано это с тем, что философия марки построена на законах шариата.
+                </p>
+                <p class="blog__description">
+                    Идея создания бренда принадлежит двум смелым и талантливым стилистам — Асие Бареевой и Каролине Павловской, которые однажды приняли ислам и решили создавать для исламских женщин стильную, красивую и осмысленную одежду. Так появился проект «Annurclothes», вдохновлённый женской скромностью и загадочностью.
+                </p>
+                <p class="blog__description">
+                    Интересный момент — фирменный дизайн бренда пропитан эстетикой не только мусульманской культуры, но и содержит в себе элементы костюмов разных народностей. Например, в летней капсульной коллекции «Annurclothes» можно увидеть древнюю славянскую культуру повязывания платка и использование на изделиях восточного паттерна. В одежде бренда ненавязчиво и гармонично старинные традиции интерпретируются на актуальный, современный лад. По мнению дизайнеров, целомудрие и сокрытие открытых участков тела было характерным в древности для многих народностей, не только для мусульман. Поэтому они экспериментируют с фасонами и силуэтами, обращаясь к историческим костюмам различных культур. Кроме этого, при разработке дизайна используются орнаменты и национальные принты, напоминающие о народном творчестве.
+                </p>
+                <p class="blog__description">
+                    Все вещи шьются в небольшом производственном цеху в Москве из качественных материалов, больший объем которых составляют натуральные, приятные телу и дышащие ткани. Также отличительной чертой одежды бренда является лаконичность, сдержанная, но очень приятная и нежная цветовая палитра, графичность, многослойность, использование тканей интересных фактур.
+                </p>
+                <p class="blog__description">
+                    У девушек настолько удачно получилось переложить традиционные национальные элементы на новый лад, что их видение женственности и женской одежды пришлось по вкусу не только мусульманкам. Попытка создать базовый гардероб, основанный на принципах благочестия, верности и нравственности оказалась актуальной. Образ, созданный  «Annurclothes» смотрится очень аутентично и невероятно стильно. Несмотря на сдержанность, строгость и скрытость, женщина выглядит притягательно и естественно. Юбки, рубашки, платки, сумки и другие изделия марки вполне можно вписать в любой повседневный гардероб.
+                </p>
             </div>
-            <div class="swiper-button primary-swiper-button swiper-button-next">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 5L19 12L12 19" stroke="#595959" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M5 12L19 12" stroke="#595959" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    
-            </div>
-          
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>
+        </section>
     </main>
     <footer class="footer">
         <nav class="footer-nav">
