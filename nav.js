@@ -1,3 +1,5 @@
+const header = document.querySelector(".header");
+
 const mobileMenuToggle = document.querySelector(".mobile-nav-toggle");
 const mobileMenu = document.querySelector(".mobile-nav");
 const mobileMenuCloseBtn = document.querySelector(".mobile-nav__close");
@@ -23,4 +25,12 @@ mobileNavLinks.forEach((link) => {
       mobileSubnavWrapper.classList.add("mobile-subnav-wrapper--active");
     }
   });
+});
+
+document.addEventListener("scroll", function (event) {
+  if (window.scrollY > 60) {
+    header.style.background = "#fff";
+  } else {
+    header.style.background = "transparent";
+  }
 });

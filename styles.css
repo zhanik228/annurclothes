@@ -597,9 +597,16 @@ body {
     padding-block: 19px;
 }
 
+.mobile-footer-padding {
+    padding-bottom: 0px;
+}
+
 @media screen and (max-width: 900px) {
     .footer {
         display: none;
+    }
+    .mobile-footer-padding {
+        padding-bottom: 50px;
     }
 }
 
@@ -1225,4 +1232,206 @@ body {
     .blog__img-wrapper img {
         width: 100%;
     }   
+}
+
+/* contacts */
+#contact-map {
+    height: calc(100vh - 77px - 57px);
+    width: 100%;
+    max-width: 1021px;
+    border-radius: 12px;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+
+.contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.contact__address {
+    font-weight: 100;
+    font-size: var(--fs-470);
+}
+.contact__phone {
+    font-weight: 100;
+    font-size: var(--fs-400);
+}
+.contact__email {
+    font-weight: 100;
+    font-size: var(--fs-400);
+}
+
+@media screen and (max-width: 900px) {
+    .contacts {
+        flex-direction: column;
+    }
+    #contact-map {
+        max-height: 357px;
+    }
+}
+
+/* about */
+.about-main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+}
+
+@media screen and (max-width: 1410px) {
+    .about {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-main {
+        height: auto;
+    }
+}
+.wrapper {
+}
+.about-card {
+    position: relative;
+}
+.about-card__img {
+    width: 100%;
+    border-radius: 8px;
+    filter:brightness(50%);
+}
+.about-card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 60px 40px;
+}
+.about-card__text {
+    color: #fff;
+}
+
+.about-card__text strong {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 900px) {
+    .about-card__content {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about-card__img {}
+}
+
+#about-swiper .swiper-button::after {
+    display: none;
+}
+
+#about-swiper {
+    width: calc(100% - 36px);
+    border-radius: 6px;
+    margin-bottom: 100px;
+    height: 620px;
+}
+
+@media screen and (max-width: 300px) {
+    #about-swiper {
+        width: 100%;
+        height: 620px;
+    }
+}
+
+#about-swiper .swiper-scrollbar {
+    display: none;
+}
+
+#about-swiper .swiper-button-prev::after {
+    display: none;
+}
+
+#about-swiper .swiper-button-next::after {
+    display: none;
+}
+
+#about-swiper .swiper-wrapper .swiper-slide {
+    
+}
+
+#about-swiper .swiper-wrapper .swiper-slide img {
+    /* width: 100%; */
+    object-fit: contain;
+    object-position: center;
+    height: 620px;
+}
+
+@media screen and (max-width: 900px) {
+    .about {
+        display: none;
+    }
+    #about-swiper .primary-swiper-button--light {
+        border: 1px solid var(--clr-neutral-400);
+    }
+    #about-swiper .swiper-button svg path {
+        stroke: var(--clr-neutral-400);
+        transition: all .3s linear;
+    }
+    #about-swiper .primary-swiper-button--light:hover svg path{
+        stroke: #fff;
+    }
+    #about-swiper .about-card__img {
+        width: auto;
+        object-fit: cover;
+        object-position: center;
+        height: 620px;
+    }
+    #about-swiper .about-card {
+        width: auto;
+        margin: 0 auto;
+    }
+    #about-swiper .swiper-slide {
+        display: flex;
+        height: 620px;
+    }
+    #about-swiper .about-card__content {
+        width: auto;
+    }
+    #about-swiper .about-card__text {
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #about-swiper .about-card__text {
+        max-width: 180px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #about-swiper .primary-swiper-button--light {
+        border: 1px solid #fff;
+    }
+    #about-swiper .swiper-button svg path {
+        stroke: #fff;
+        transition: all .3s linear;
+    }
+    #about-swiper .primary-swiper-button--light:hover svg path{
+        stroke: var(--clr-neutral-400);
+    }
 }
