@@ -1362,6 +1362,7 @@ body {
     border-radius: 6px;
     margin-bottom: 100px;
     height: 620px;
+    display: none;
 }
 
 @media screen and (max-width: 300px) {
@@ -1397,6 +1398,9 @@ body {
 @media screen and (max-width: 900px) {
     .about {
         display: none;
+    }
+    #about-swiper {
+        display: block;
     }
     #about-swiper .primary-swiper-button--light {
         border: 1px solid var(--clr-neutral-400);
