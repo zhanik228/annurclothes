@@ -180,16 +180,28 @@ body {
 /* input */
 .primary-input {
     min-width: 200px;
-    text-transform: uppercase;
+    width: 100%;
     border: none;
     border-bottom: 1px solid var(--clr-neutral-600);
-    text-align: end;
+    /* text-align: end; */
     transition: border .3s linear;
     background: transparent;
 }
 
+.primary-input--end {
+    text-align: end;
+}
+
+.primary-input--uppercase {
+    text-transform: uppercase;
+}
+
+.primary-input--color::placeholder {
+    color: var(--clr-neutral-400); 
+}
+
 .primary-input::placeholder {
-    color: var(--clr-neutral-400);
+    /* color: var(--clr-neutral-400); */
 }
 
 .primary-input:focus {
@@ -206,6 +218,7 @@ body {
     font-size: var(--fs-200);
     text-align: center;
     cursor: pointer;
+    transition: all .3s linear;
 }
 
 .primary-btn--lg {
@@ -1433,5 +1446,72 @@ body {
     }
     #about-swiper .primary-swiper-button--light:hover svg path{
         stroke: var(--clr-neutral-400);
+    }
+}
+
+/* register */
+.auth-main {
+    height: 100%;
+}
+.auth {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.login {
+    width: 45%;
+}
+
+.login, .register {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 50px;
+}
+.auth-form__title {
+    font-size: var(--fs-700);
+    font-weight: 300;
+}
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.auth-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+
+.auth-form__btn {
+    width: 100%;
+}
+
+.register__email-label {
+}
+.auth-form__label {
+    font-weight: 100;
+    font-size: var(--fs-250);
+}
+
+@media screen and (max-width: 900px) {
+    .auth-form__title {
+        font-size: var(--fs-600);
+    }
+    .register--hidden {
+        display: none;
+    }
+    .login, .register {
+        width: 100%;
+        padding: 0;
+    }
+
+    .auth-link {
+        display: block;
+    }
+    .auth-main {
+        height: calc(100vh - 64px - 53px - 34px);
     }
 }

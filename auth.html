@@ -241,100 +241,47 @@
             <a href="#" role="button">Корзина</a>
         </div>
     </header>
-    <main class="mobile-footer-padding about-main">
+    <main class=" auth-main">
         <div class="breadcrumb header-offset breadcrumb--mobile wrapper">
             <a href="#" class="breadcrumb__link">
                 <p class="breadcrumb__item breadcrumb__title">О нас</p>
             </a>
         </div>
-        <div class="about wrapper">
-            <div class="about-card">
-                <img src="./assets/about/1.png" alt="about img" class="about-card__img">
-                <div class="about-card__content">
-                    <p class="about-card__text"><strong>annurclothes</strong> - российский бренд, позиционирующий свой взгляд на культуру потребления и моральность
-                        женского облика.</p>
+        <section class="auth wrapper">
+            <form class="login auth-form">
+                <h2 class="auth-form__title">Войти</h2>
+                <div class="form-group">
+                    <label class="register__email-label auth-form__label" for="email">Адрес электронной почты</label>
+                    <input autocomplete="email" name="email" id="email" class="primary-input auth-form__input" type="email" placeholder="Введите e-mail" required>
                 </div>
-            </div>
-            <div class="about-card">
-                <img src="./assets/about/2.png" alt="about img" class="about-card__img">
-                <div class="about-card__content">
-                    <p class="about-card__text">Мы ценим труд наших работников, поддерживаем хорошие рабочие условия, заботимся о применении экологичных тканей и упаковки.</p>
+                <div class="form-group">
+                    <label class="auth__password-label auth-form__label" for="password">Пароль</label>
+                    <input name="password" id="password" class="primary-input auth-form__input" type="password" placeholder="Введите пароль от аккаунта" required>
                 </div>
-            </div>
-            <div class="about-card">
-                <img src="./assets/about/3.png" alt="about img" class="about-card__img">
-                <div class="about-card__content">
-                    <p class="about-card__text">Чтим этическую сторону женского костюма, в нашей линейке нет изделий,
-                        откровенного дизайна.</p>
+                <button type="submit" href="#" class="auth-form__btn primary-btn">Войти</button>
+            </form>
+            <form class="register register--hidden auth-form">
+                <h2 class="auth-form__title">Зарегистрироваться</h2>
+                <div class="form-group">
+                    <label class="register__email-label auth-form__label" for="last-name">Фамилия</label>
+                    <input name="last-name" id="last-name" class="primary-input auth-form__input" type="text" placeholder="Введите свою фамилию" required>
                 </div>
-            </div>
-            <div class="about-card">
-                <img src="./assets/about/4.png" alt="about img" class="about-card__img">
-                <div class="about-card__content">
-                    <p class="about-card__text">Это качественная экологичная одежда, основанная на простых формах, свободных конструкциях, вдохновленная традиционным прикладным искусством разных народов, одежда уникальная и универсальная, это базовый гардероб</p>
+                <div class="form-group">
+                    <label class="register__email-label auth-form__label" for="name">Имя</label>
+                    <input autocomplete="name" name="name" id="name" class="primary-input auth-form__input" type="text" placeholder="Введите своё имя" required>
                 </div>
-            </div>
-        </div>
-        <div id="about-swiper" class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <div class="about-card">
-                    <img src="./assets/about/1.png" alt="about img" class="about-card__img" />
-                    <div class="about-card__content">
-                        <p class="about-card__text"><strong>annurclothes</strong> - российский бренд, позиционирующий свой взгляд на культуру потребления и моральность
-                            женского облика.</p>
-                    </div>
+                <div class="form-group">
+                    <label class="auth__password-label auth-form__label" for="password">Пароль</label>
+                    <input name="password" id="password" class="primary-input auth-form__input" type="password" placeholder="Введите пароль" required>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="about-card">
-                    <img src="./assets/about/2.png" alt="about img" class="about-card__img">
-                    <div class="about-card__content">
-                        <p class="about-card__text">Мы ценим труд наших работников, поддерживаем хорошие рабочие условия, заботимся о применении экологичных тканей и упаковки.</p>
-                    </div>
+                <div class="form-group">
+                    <label class="auth__password-label auth-form__label" for="repeat-password">Пароль</label>
+                    <input name="repeat-password" id="repeat-password" class="primary-input auth-form__input" type="password" placeholder="Повторите пароль" required>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="about-card">
-                    <img src="./assets/about/3.png" alt="about img" class="about-card__img">
-                    <div class="about-card__content">
-                        <p class="about-card__text">Чтим этическую сторону женского костюма, в нашей линейке нет изделий,
-                            откровенного дизайна.</p>
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="about-card">
-                    <img src="./assets/about/4.png" alt="about img" class="about-card__img">
-                    <div class="about-card__content">
-                        <p class="about-card__text">Это качественная экологичная одежда, основанная на простых формах, свободных конструкциях, вдохновленная традиционным прикладным искусством разных народов, одежда уникальная и универсальная, это базовый гардероб</p>
-                    </div>
-                </div>
-              </div>
-            </div>
-            <!-- If we need pagination -->
-            <!-- <div class="breadcrumb-swiper-pagination"></div> -->
-        
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button primary-swiper-button primary-swiper-button--light swiper-button-prev">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 19L5 12L12 5" stroke="#595959" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M19 12H5" stroke="#595959" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="swiper-button primary-swiper-button primary-swiper-button--light swiper-button-next">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 5L19 12L12 19" stroke="#595959" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M5 12L19 12" stroke="#595959" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    
-            </div>
-        
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-        </div>
+                <button type="submit" href="#" class="auth-form__btn primary-btn">Зарегистрироваться</button>
+            </form>
+        </section>
+        <a class="auth-link primary-btn primary-btn--text" href="register.html">Зарегистрироваться</a>
     </main>
     <footer class="footer">
         <nav class="footer-nav">
@@ -365,6 +312,5 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="nav.js"></script>
-    <script src="about.js"></script>
 </body>
 </html>
