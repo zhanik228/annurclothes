@@ -1531,9 +1531,14 @@ body {
     gap: 36px;
 }
 
+.profile--block {
+    display: block;
+}
+
 .wrapper {
 }
-.profile__content {
+
+.profile__content--limited {
     max-width: 890px;
 }
 
@@ -1593,6 +1598,10 @@ body {
 .primary-btn {
 }
 
+#profile-swiper {
+    display: none;
+}
+
 @media screen and (max-width: 900px) {
     .profile__img {
         display: none;
@@ -1606,6 +1615,9 @@ body {
     .profile__content {
         width: 100%;
     }
+    #profile-swiper {
+        display: block;
+    }
 }
 
 #profile-swiper {
@@ -1618,4 +1630,115 @@ body {
 
 #profile-swiper .swiper-wrapper {
     
+}
+
+/* loyal system */
+.loyal-system {
+}
+.loyal-system__title {
+    margin-bottom: 50px;
+    font-weight: 300;
+    font-size: var(--fs-700);
+}
+.loyal-system__info {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin-bottom: 24px;
+}
+.loyal-system__info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.loyal-system__info-title {
+    font-size: var(--fs-470);
+}
+.loyal-system__info-description {
+    line-height: 1.14;
+}
+.loyal-system__discount-wrapper {
+}
+.loyal-system__discount {
+}
+
+.loyal-system__progress-bar {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.loyal-system-progress-bar {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+}
+
+.loyal-system-progress-bar::-webkit-slider-runnable-track {
+    background: var(--clr-neutral-600);
+    height: 6px;
+}
+
+.loyal-system-progress-bar::-moz-range-track {
+    background: var(--clr-neutral-600);
+    height: 0.5rem;
+}
+
+.loyal-system-progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -4px; /* Centers thumb on the track */
+    background-color: var(--clr-neutral-500);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.loyal-system-progress-bar::-moz-range-thumb {
+    border: none; /*Removes extra border that FF applies*/
+    border-radius: 0; /*Removes default border-radius that FF applies*/
+ 
+    /*custom styles*/
+    background-color: #5cd5eb;
+    height: 2rem;
+    width: 1rem;
+}
+
+ .loyal-system__progress-bar .bar {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    height: 20px;
+    width: 1px;
+    display: block;
+    background: var(--clr-neutral-400);
+}
+
+.loyal-system__progress-bar .bar:nth-child(3) {
+    left: 30%;
+}
+
+.loyal-system__progress-bar .bar:nth-child(4) {
+    left: 60%;
+}
+
+.loyal-system__progress-bar .bar:nth-child(5) {
+    left: 79%;
+}
+
+.loyal-system__progress-bar .bar:nth-child(6) {
+    left: 99.9%;
+}
+
+.loyal-system__progress-limits {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--fs-350);
+}
+
+.loyal-system__progress-status {
+    font-weight: 300;
+    color: var(--clr-neutral-700);
+    text-align: center;
 }

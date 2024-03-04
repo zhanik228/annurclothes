@@ -248,17 +248,17 @@
             </a>
         </div>
         <div class="profile wrapper">
-            <div class="profile__content profile__content--limited">
+            <div class="profile__content">
                 <nav class="profile-nav">
                     <ul class="profile-nav__list">
                         <li class="profile-nav__item">
-                            <a href="#" class="profile-nav__link profile-nav__link--active">Моя учетная запись</a>
+                            <a href="#" class="profile-nav__link">Моя учетная запись</a>
                         </li>
                         <li class="profile-nav__item">
                             <a href="favorites.html" class="profile-nav__link">Избранное</a>
                         </li>
                         <li class="profile-nav__item">
-                            <a href="loyal-system.html" class="profile-nav__link">Система лояльности</a>
+                            <a href="#" class="profile-nav__link profile-nav__link--active">Система лояльности</a>
                         </li>
                         <li class="profile-nav__item">
                             <a href="#" class="profile-nav__link">Выйти</a>
@@ -283,35 +283,32 @@
                       </div>
                     </div>
                   </div>
-                <form class="profile-form">
-                    <div class="form-group">
-                        <label class="register__email-label profile-form__label" for="last-name">Фамилия</label>
-                        <input name="last-name" id="last-name" class="primary-input profile-form__input" type="text" placeholder="Введите свою фамилию" required>
+                <section class="loyal-system">
+                    <h2 class="loyal-system__title">Ваш бонусный счет</h2>
+                    <div class="loyal-system__info">
+                        <div class="loyal-system__info-wrapper">
+                            <p class="loyal-system__info-title">У Вас 500 бонусов</p>
+                            <p class="loyal-system__info-description">За покупку определенных товаров вам начисляются бонусы, в размере 5% от стоимости товара.
+                            А так же всем без исключения, бонус 500 рублей в Рамадан. Бонусами можно воспользоваться в течение двух недель со дня получения. </p>
+                        </div>
+                        <p class="loyal-system__discount">Ваша скидка составляет</p>
                     </div>
-                    <div class="form-group">
-                        <label class=" profile-form__label" for="name">Имя</label>
-                        <input autocomplete="name" name="name" id="name" class="primary-input profile-form__input" type="text" placeholder="Введите своё имя" required>
+                    <div class="loyal-system__progress">
+                        <div class="loyal-system__progress-limits">
+                            <p>Min.</p>
+                            <p>Max.</p>
+                        </div>
+                        <div class="loyal-system__progress-bar">
+                            <input min="0" max="24" value="3" class="loyal-system-progress-bar" type="range">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <p class="loyal-system__progress-status">До следующей скидки осталось совсем немного</p>
                     </div>
-                    <div class="form-group">
-                        <label class=" profile-form__label" for="email">Адрес электронной почты</label>
-                        <input autocomplete="email" name="name" id="email" class="primary-input profile-form__input" type="text" placeholder="Введите своё имя" required>
-                    </div>
-                    <div class="form-group">
-                        <label class=" profile-form__label" for="phone">Номер телефона</label>
-                        <input autocomplete="email" name="phone" id="phone" class="primary-input profile-form__input" type="text" placeholder="Номер телефона" required>
-                    </div>
-                    <div class="form-group">
-                        <label class="profile-form__label" for="address">Мой адрес</label>
-                        <input autocomplete="email" name="address" id="address" class="primary-input profile-form__input" type="text" placeholder="Адресс" required>
-                        <p>Пожалуйста, напишите Ваш полный точный почтовый адрес 🖤
-                            Индекс, Город, Улица, Дом, Квартира, Телефон, Имя, Фамилия
-                             
-                            И мы отправим Вам!</p>
-                    </div>
-                </form>
-            </div>
-            <div class="profile__img-wrapper">
-                <img class="profile__img" src="./assets/profile/1.png" alt="profile img">
+                </section>
             </div>
         </div>
     </main>
