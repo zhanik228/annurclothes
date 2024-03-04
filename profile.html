@@ -241,51 +241,79 @@
             <a href="#" role="button">Корзина</a>
         </div>
     </header>
-    <main class=" auth-main">
+    <main class="mobile-footer-padding">
         <div class="breadcrumb header-offset breadcrumb--mobile wrapper">
             <a href="#" class="breadcrumb__link">
-                <p class="breadcrumb__item breadcrumb__title">О нас</p>
+                <p class="breadcrumb__item breadcrumb__title">Профиль</p>
             </a>
         </div>
-        <section class="auth wrapper">
-            <form class="login auth-form">
-                <h2 class="auth-form__title">Войти</h2>
-                <div class="form-group">
-                    <label class="register__email-label auth-form__label" for="email">Адрес электронной почты</label>
-                    <input autocomplete="email" name="email" id="email" class="primary-input auth-form__input" type="email" placeholder="Введите e-mail" required>
-                </div>
-                <div class="form-group">
-                    <label class="auth__password-label auth-form__label" for="password">Пароль</label>
-                    <input name="password" id="password" class="primary-input auth-form__input" type="password" placeholder="Введите пароль от аккаунта" required>
-                </div>
-                <button type="submit" href="#" class="auth-form__btn primary-btn">Войти</button>
-            </form>
-            <form class="register register--hidden auth-form">
-                <h2 class="auth-form__title">Зарегистрироваться</h2>
-                <div class="form-group">
-                    <label class="register__email-label auth-form__label" for="last-name">Фамилия</label>
-                    <input name="last-name" id="last-name" class="primary-input auth-form__input" type="text" placeholder="Введите свою фамилию" required>
-                </div>
-                <div class="form-group">
-                    <label class="register__email-label auth-form__label" for="name">Имя</label>
-                    <input autocomplete="name" name="name" id="name" class="primary-input auth-form__input" type="text" placeholder="Введите своё имя" required>
-                </div>
-                <div class="form-group">
-                    <label class="register__email-label auth-form__label" for="email">Адрес электронной почты</label>
-                    <input autocomplete="email" name="name" id="email" class="primary-input auth-form__input" type="text" placeholder="Введите своё имя" required>
-                </div>
-                <div class="form-group">
-                    <label class="auth__password-label auth-form__label" for="password">Пароль</label>
-                    <input name="password" id="password" class="primary-input auth-form__input" type="password" placeholder="Введите пароль" required>
-                </div>
-                <div class="form-group">
-                    <label class="auth__password-label auth-form__label" for="repeat-password">Пароль</label>
-                    <input name="repeat-password" id="repeat-password" class="primary-input auth-form__input" type="password" placeholder="Повторите пароль" required>
-                </div>
-                <button type="submit" href="#" class="auth-form__btn primary-btn">Зарегистрироваться</button>
-            </form>
-        </section>
-        <a class="auth-link primary-btn primary-btn--text" href="register.html">Зарегистрироваться</a>
+        <div class="profile wrapper">
+            <div class="profile__content">
+                <nav class="profile-nav">
+                    <ul class="profile-nav__list">
+                        <li class="profile-nav__item">
+                            <a href="#" class="profile-nav__link profile-nav__link--active">Моя учетная запись</a>
+                        </li>
+                        <li class="profile-nav__item">
+                            <a href="#" class="profile-nav__link">Избранное</a>
+                        </li>
+                        <li class="profile-nav__item">
+                            <a href="#" class="profile-nav__link">Система лояльности</a>
+                        </li>
+                        <li class="profile-nav__item">
+                            <a href="#" class="profile-nav__link">Выйти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="swiper" id="profile-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <a href="#" class="profile-nav__link profile-nav__link--active">Моя учетная запись</a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#" class="profile-nav__link">Избранное</a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#" class="profile-nav__link">Система лояльности</a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#" class="profile-nav__link">Выйти</a>
+                      </div>
+                    </div>
+                  </div>
+                <form class="profile-form">
+                    <div class="form-group">
+                        <label class="register__email-label profile-form__label" for="last-name">Фамилия</label>
+                        <input name="last-name" id="last-name" class="primary-input profile-form__input" type="text" placeholder="Введите свою фамилию" required>
+                    </div>
+                    <div class="form-group">
+                        <label class=" profile-form__label" for="name">Имя</label>
+                        <input autocomplete="name" name="name" id="name" class="primary-input profile-form__input" type="text" placeholder="Введите своё имя" required>
+                    </div>
+                    <div class="form-group">
+                        <label class=" profile-form__label" for="email">Адрес электронной почты</label>
+                        <input autocomplete="email" name="name" id="email" class="primary-input profile-form__input" type="text" placeholder="Введите своё имя" required>
+                    </div>
+                    <div class="form-group">
+                        <label class=" profile-form__label" for="phone">Номер телефона</label>
+                        <input autocomplete="email" name="phone" id="phone" class="primary-input profile-form__input" type="text" placeholder="Номер телефона" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="profile-form__label" for="address">Мой адрес</label>
+                        <input autocomplete="email" name="address" id="address" class="primary-input profile-form__input" type="text" placeholder="Адресс" required>
+                        <p>Пожалуйста, напишите Ваш полный точный почтовый адрес 🖤
+                            Индекс, Город, Улица, Дом, Квартира, Телефон, Имя, Фамилия
+                             
+                            И мы отправим Вам!</p>
+                    </div>
+                </form>
+            </div>
+            <div class="profile__img-wrapper">
+                <img class="profile__img" src="./assets/profile/1.png" alt="profile img">
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <nav class="footer-nav">
@@ -316,5 +344,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="nav.js"></script>
+    <script src="profile.js"></script>
 </body>
 </html>
