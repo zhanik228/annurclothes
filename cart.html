@@ -244,73 +244,62 @@
     <main class="mobile-footer-padding">
         <div class="breadcrumb header-offset breadcrumb--mobile wrapper">
             <a href="#" class="breadcrumb__link">
-                <p class="breadcrumb__item breadcrumb__title">Профиль</p>
+                <p class="breadcrumb__item breadcrumb__title">Корзина</p>
             </a>
         </div>
-        <div class="profile wrapper">
-            <div class="profile__content">
-                <nav class="profile-nav">
-                    <ul class="profile-nav__list">
-                        <li class="profile-nav__item">
-                            <a href="profile.html" class="profile-nav__link">Моя учетная запись</a>
-                        </li>
-                        <li class="profile-nav__item">
-                            <a href="favorites.html" class="profile-nav__link">Избранное</a>
-                        </li>
-                        <li class="profile-nav__item">
-                            <a href="loyal-system.html" class="profile-nav__link profile-nav__link--active">Система лояльности</a>
-                        </li>
-                        <li class="profile-nav__item">
-                            <a href="#" class="profile-nav__link">Выйти</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="swiper" id="profile-swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                      <!-- Slides -->
-                      <div class="swiper-slide">
-                        <a href="profile.html" class="profile-nav__link profile-nav__link--active">Моя учетная запись</a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="favorites.html" class="profile-nav__link">Избранное</a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="loyal-system.html" class="profile-nav__link">Система лояльности</a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="#" class="profile-nav__link">Выйти</a>
-                      </div>
-                    </div>
-                  </div>
-                <section class="loyal-system">
-                    <h2 class="loyal-system__title">Ваш бонусный счет</h2>
-                    <div class="loyal-system__info">
-                        <div class="loyal-system__info-wrapper">
-                            <p class="loyal-system__info-title">У Вас 500 бонусов</p>
-                            <p class="loyal-system__info-description">За покупку определенных товаров вам начисляются бонусы, в размере 5% от стоимости товара.
-                            А так же всем без исключения, бонус 500 рублей в Рамадан. Бонусами можно воспользоваться в течение двух недель со дня получения. </p>
+        <div class="cart wrapper">
+            <table class="cart-table">
+                <thead>
+                    <tr class="cart-table__row">
+                        <th class="cart-table__heading">Товар</th>
+                        <th class="cart-table__heading">Количество</th>
+                        <th class="cart-table__heading cart-table__heading--end">Итого</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="cart-table__row">
+                        <td class="cart-table__item">
+                            <div class="cart-item-card">
+                                <img src="./assets/cart/1.png" alt="cart item img" class="cart-item-card">
+                                <div class="cart-item-card__content">
+                                    <h2 class="cart-item-card__title">Диадема из бисера</h2>
+                                    <p class="card-item-card__price">1 000 P</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="cart-table__item">
+                            <div class="cart-table__count">
+                                <a href="#">-</a> <span>2</span> <a href="#">+</a>
+                            </div>
+                        </td>
+                        <td class="cart-table__item cart-table__item--end">
+                            <span class="card-table__total-price">2 000 ₽</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <section class="cart-delivery">
+                <form class="cart-delivery-form">
+                    <h2 class="cart-delivery-form__title">Выберите способ доставки</h2>
+                    <div class="cart-delivery-options">
+                        <div class="form-group">
+                            <label class="cart-delivery__radio-wrapper">
+                                <input class="cart-delivery__radio" type="radio" name="delivery" id="CDEK">
+                                <span class="cart-delivery___option-title">CDEK</span>
+                                <span class="cart-delivery__checkbox"></span>
+                            </label>
                         </div>
-                        <p class="loyal-system__discount">Ваша скидка составляет <output id="loyal-system-output" for="loyal-system-progress-bar"></output> </p>
-                    </div>
-                    <div class="loyal-system__progress">
-                        <div class="loyal-system__progress-limits">
-                            <p>Min.</p>
-                            <p>Max.</p>
+                        <div class="form-group">
+                            <label class="cart-delivery__radio-wrapper">
+                                <input class="cart-delivery__radio" type="radio" name="delivery" id="mail">
+                                <span class="cart-delivery___option-title">Почта</span>
+                                <span class="cart-delivery__checkbox"></span>
+                            </label>
                         </div>
-                        <div class="loyal-system__progress-bar">
-                            <input disabled min="0" id="loyal-system-progress-bar" max="100" value="3" class="loyal-system-progress-bar" type="range">
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                            <div class="loyal-system-bar"></div>
-                        </div>
-                        <p class="loyal-system__progress-status">До следующей скидки осталось совсем немного</p>
                     </div>
-                </section>
-            </div>
+                    <button class="primary-btn">ОФОРМИТЬ</button>
+                </form>
+            </section>
         </div>
     </main>
     <footer class="footer">
@@ -342,23 +331,5 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="nav.js"></script>
-    <script src="profile.js"></script>
-    <script>
-        const slider = document.querySelector('.loyal-system-progress-bar')
-        const progressBar = document.querySelector('.loyal-system-bar')
-        const output = document.getElementById('loyal-system-output')
-
-        // progressBar.style.width = this.value + '%'
-        if (this.value) {
-            output.innerHTML = this.value + '%'
-        } else {
-            output.innerHTML = 3 + '%'
-        }
-        
-        slider.oninput = function() {
-            progressBar.style.width = this.value + '%'
-            output.innerHTML = this.value + '%'
-        }
-    </script>
 </body>
 </html>
