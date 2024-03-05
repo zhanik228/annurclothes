@@ -183,7 +183,6 @@ body {
     width: 100%;
     border: none;
     border-bottom: 1px solid var(--clr-neutral-600);
-    /* text-align: end; */
     transition: border .3s linear;
     background: transparent;
 }
@@ -427,10 +426,23 @@ body {
     margin-top: auto;
 }
 
+/* remove scroll */
+
+@media screen and (min-width: 900px) {
+    .remove-scroll {
+        height: calc(100svh - 77px - 57px);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .remove-scroll--breadcrumb {
+        height: calc(100svh - 77px - 57px - 58px);
+    }
+}
 /* slider */
 #main-swiper {
     width: calc(100% - 68px);
-    max-height: 1012px;
+    /* max-height: 1012px; */
     border-radius: 12px;
     position: relative;
 }
@@ -442,17 +454,6 @@ body {
 #main-swiper .swiper-scrollbar {
     display: none;
 }
-
-/* #main-swiper .swiper-button { */
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--clr-neutral-500);
-    padding: 9px;
-    border-radius: 4px;
-    height: auto;
-    width: auto; */
-/* } */
 
 #main-swiper .swiper-button:hover {
     background: var(--clr-neutral-500);
@@ -488,7 +489,6 @@ body {
 @media screen and (max-width: 900px) {
     #main-swiper {
         width: 100%;
-        /* min-height: 100vh; */
         border-radius: 0;
     }
     #main-swiper .swiper-slide {
@@ -507,7 +507,7 @@ body {
     #main-swiper .swiper-slide img {
         object-position: center;
         object-fit: cover;
-        height: 100vh;
+        height: 100svh;
         display: block;
     }
 }
@@ -1169,6 +1169,9 @@ body {
         margin-top: 105px;
         flex-direction: column;
     }
+    .blogs-main {
+        display: block;
+    }
 }
 
 .blogs__title {
@@ -1181,7 +1184,10 @@ body {
 #blogs-swiper {
     margin-inline: 18px;
     padding-bottom: 100px;
-    overflow: hidden;
+}
+
+#blogs-swiper .swiper-slide {
+    padding: 40px;
 }
 
 #blogs-swiper .primary-swiper-button {
@@ -1251,7 +1257,7 @@ body {
 #contact-map {
     height: calc(100vh - 77px - 57px);
     width: 100%;
-    max-width: 1021px;
+    max-width: 926px;
     border-radius: 12px;
 }
 
@@ -1288,9 +1294,10 @@ body {
 @media screen and (max-width: 900px) {
     .contacts {
         flex-direction: column;
+        gap: 78px;
     }
     #contact-map {
-        max-height: 357px;
+        max-height: 196px;
     }
 }
 
@@ -1324,7 +1331,8 @@ body {
 .about-card__img {
     width: 100%;
     border-radius: 8px;
-    filter:brightness(50%);
+    filter: brightness(70%);
+    background-color: var(--clr-neutral-500);
 }
 .about-card__content {
     position: absolute;
