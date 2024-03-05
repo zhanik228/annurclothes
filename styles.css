@@ -488,7 +488,7 @@ body {
 @media screen and (max-width: 900px) {
     #main-swiper {
         width: 100%;
-        min-height: 100vh;
+        min-height: 100dvh;
         border-radius: 0;
     }
     #main-swiper .swiper-slide {
