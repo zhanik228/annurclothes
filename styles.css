@@ -1520,6 +1520,18 @@ body {
     height: 100%;
 }
 
+.auth-divider {
+    height: 100%;
+    width: 1px;
+    background: #F5F2EE;
+}
+
+@media screen and (max-width: 1180px) {
+    .auth-divider {
+        display: none;
+    }
+}
+
 .login, .register {
     width: 45%;
 }
