@@ -786,6 +786,7 @@ body {
 @media screen and (max-width: 780px) {
     .balaclavs-card-grid {
         grid-template-columns: repeat(3, 1fr);
+        gap: 17.82px;
     }
 }
 
@@ -795,11 +796,11 @@ body {
     }
 }
 
-@media screen and (max-width: 357px) {
+/* @media screen and (max-width: 357px) {
     .balaclavs-card-grid {
         grid-template-columns: repeat(1, 1fr);
     }
-}
+} */
 
 .balaclav-card {
     display: flex;
