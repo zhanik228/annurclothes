@@ -238,6 +238,10 @@ body {
     color: initial;
 }
 
+.primary-btn--uppercase {
+    text-transform: uppercase;
+}
+
 /* primary swiper buttons */
 .primary-swiper-button {
     display: flex;
@@ -442,7 +446,7 @@ body {
 /* slider */
 #main-swiper {
     width: calc(100% - 68px);
-    /* max-height: 1012px; */
+    max-height: 1012px;
     border-radius: 12px;
     position: relative;
 }
@@ -483,7 +487,8 @@ body {
     width: 100%;
     display: block;
     object-fit: cover;
-    object-position: 80%;
+    object-position: center;
+    height: 100vh;
 }
 
 @media screen and (max-width: 900px) {
@@ -814,6 +819,10 @@ body {
     height: 24px;
     display: block;
     border-radius: 2px;
+}
+
+.balaclav-card__title {
+    text-transform: uppercase;
 }
 
 @media screen and (max-width: 394px) {
@@ -1221,9 +1230,9 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-    #blogs-swiper {
+    /* #blogs-swiper { */
         /* margin-top: 105px; */
-    }
+    /* } */
     .blogs__img {
         width: 100%;
         height: 187px;
@@ -1473,6 +1482,9 @@ body {
 /* register */
 .auth-main {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .auth {
     display: flex;
@@ -1502,7 +1514,7 @@ body {
 .auth-form .form-group {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 12px;
     width: 100%;
 }
 
@@ -1536,9 +1548,9 @@ body {
     .auth-link {
         display: block;
     }
-    .auth-main {
+    /* .auth-main {
         height: calc(100svh - 64px - 53px - 34px);
-    }
+    } */
 }
 
 /* profile */
@@ -1806,6 +1818,7 @@ body {
     text-align: left;
     border-bottom: 1px solid var(--clr-neutral-600);
     font-style: var(--fs-300);
+    text-transform: uppercase;
 }
 
 .cart-table__heading--end {
@@ -1827,6 +1840,7 @@ body {
 .cart-item-card__title {
     font-size: var(--fs-300);
     font-weight: 300;
+    text-transform: uppercase;
 }
 .cart-table__count {
     font-size: var(--fs-470);
