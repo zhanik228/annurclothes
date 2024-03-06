@@ -909,6 +909,12 @@ body {
 .item-section-info__title {
     font-size: var(--fs-700);
 }
+
+@media screen and (max-width: 900px) {
+    .item-section-info__title {
+        font-size: var(--fs-600);
+    }
+}
 .item-section-info__price {
     font-size: var(--fs-500);
 }
@@ -998,7 +1004,7 @@ body {
     margin-bottom: 4px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 300px) {
     .primary-ad-card {
         flex-direction: column;
     }
@@ -1027,7 +1033,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1190px) {
     .item-section-info__images-wrapper {
         flex-direction: column-reverse;
     }
@@ -1039,7 +1045,15 @@ body {
     }
     .item-section-info__big-img {
         width: 100%;
-        height: auto;
+        height: 100%;
+    }
+    .item-section-info {
+        height: calc(100svh - 64px);
+        margin-top: 64px;
+        padding-block: 0;
+    }
+    .item-section-info__data {
+        padding: 0;
     }
 }
 
@@ -1052,7 +1066,7 @@ body {
 @media screen and (max-width: 783px) {
     .item-section-info {
         display: block;
-        padding-block: 53px;
+        /* padding-block: 30px; */
     }
 }
 /* lookbook */
