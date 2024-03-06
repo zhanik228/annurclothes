@@ -1312,7 +1312,7 @@ body {
 @media screen and (max-width: 900px) {
     .contacts {
         flex-direction: column;
-        gap: 68px;
+        gap: 48px;
     }
     #contact-map {
         max-height: 196px;
