@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Optional parameters
     direction: "horizontal",
     loop: true,
-    autoplay: {
-      delay: 5000,
-    },
+    // autoplay: {
+    //   delay: 5000,
+    // },
     slidesPerView: 1, // Initially determine the number of slides per view
     slidesPerGroup: 1, // Initially determine the number of slides per group
 
