@@ -892,7 +892,7 @@ body {
 }
 .item-section-info__big-img {
     width: 961px;
-    height: 100vh;
+    height: calc(100svh - 77px - 57px);
     border-radius: 12px;
 }
 .item-section-info__data {
