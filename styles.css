@@ -245,9 +245,9 @@ body {
     text-transform: uppercase;
 }
 
-.primary-btn--bold {
+/* .primary-btn--bold {
 
-}
+} */
 
 /* primary swiper buttons */
 .primary-swiper-button {
@@ -648,14 +648,16 @@ body {
     padding: 7px 0;
     font-size: var(--fs-200);
     text-transform: uppercase;
+    transition: all .3s linear;
 }
 
-.footer-nav__link--active {
+/* .footer-nav__link--active {
     border-bottom: 1px solid var(--clr-neutral-600);
     font-weight: 700;
-}
+} */
 
 .footer-nav__link:hover {
+    border-bottom: 1px solid var(--clr-neutral-600);
     font-weight: 700;
 }
 
