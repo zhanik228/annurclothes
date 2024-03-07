@@ -185,6 +185,9 @@ body {
     border-bottom: 1px solid var(--clr-neutral-600);
     transition: border .3s linear;
     background: transparent;
+    border-radius: 0;
+
+    -webkit-appearance: none;
 }
 
 .primary-input--end {
@@ -1523,6 +1526,7 @@ body {
     object-fit: contain;
     object-position: center;
     height: 620px;
+    filter: brightness(80%);
 }
 
 @media screen and (max-width: 900px) {
@@ -1708,6 +1712,7 @@ body {
     padding: 10.5px 0;
     font-size: var(--fs-300);
     text-transform: uppercase;
+    text-wrap: nowrap;
 }
 .profile-nav__link--active {
     border-bottom: 1px solid var(--clr-neutral-400);
@@ -1957,9 +1962,10 @@ body {
     font-size: var(--fs-300);
     font-weight: 300;
     text-transform: uppercase;
+    margin-bottom: 18px;
 }
 .cart-table__count {
-    font-size: var(--fs-470);
+    font-size: var(--fs-450);
     font-weight: 300;
 }
 
@@ -1968,7 +1974,7 @@ body {
 }
 
 .card-table__total-price {
-    font-size: var(--fs-470);
+    font-size: var(--fs-450);
 }
 
 .cart-delivery {

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
       //   autoplay: {
       //     delay: 5000
       //   },
-      slidesPerView: 2.5, // Initially determine the number of slides per view
+      slidesPerView: 1.5, // Initially determine the number of slides per view
       slidesPerGroup: 1, // Initially determine the number of slides per group
       //   slidesOffsetAfter: -550,
       spaceBetween: 30,
