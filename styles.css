@@ -533,7 +533,7 @@ body {
 #reviews-swiper {
     width: calc(100% - 36px);
     border-radius: 6px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     height: 620px;
 }
 
@@ -1346,11 +1346,15 @@ body {
 }
 
 .blog__title {
-    font-size: var(--fs-300);
+    font-weight: 300;
+    font-size: var(--fs-470);
+    letter-spacing: 0.05em;
 }
 
 .blog__description {
     max-width: 652px;
+    font-weight: 300;
+    font-size: var(--fs-350);
 }
 
 @media screen and (max-width: 900px) {
