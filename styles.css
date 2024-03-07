@@ -1461,11 +1461,18 @@ body {
 .about-card {
     position: relative;
 }
+
+.about-card::before {
+    content: "";
+    position: absolute;
+    background: rgba(89, 89, 89, 0.5);
+    height: 100%;
+    width: 100%;
+}
+
 .about-card__img {
     width: 100%;
     border-radius: 8px;
-    filter: brightness(70%);
-    background-color: var(--clr-neutral-500);
 }
 .about-card__content {
     position: absolute;
