@@ -1709,6 +1709,17 @@ body {
     border-radius: 12px;
 }
 
+.profile__text {
+    font-weight: 300;
+    font-size: var(--fs-250);
+}  
+
+@media screen and (max-width: 900px) {
+    .profile__text {
+        font-weight: 300;
+    }   
+}
+
 .profile-nav {
     margin-bottom: 50px;
 }
