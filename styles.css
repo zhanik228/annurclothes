@@ -1658,6 +1658,12 @@ body {
     display: none;
 }
 
+@media screen and (max-width: 900px) {
+    .auth-form {
+        gap: 20px;
+    }
+}
+
 @media screen and (max-width: 1180px) {
     .auth-form__title {
         font-size: var(--fs-600);
