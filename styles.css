@@ -224,6 +224,7 @@ body {
     transition: all .3s linear;
     text-transform: uppercase;
     font-weight: 700;
+    -webkit-text-fill-color: var(--clr-neutral-400);
 }
 
 .primary-btn--lg {
