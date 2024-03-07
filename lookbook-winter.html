@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnnurClothes Item</title>
+    <title>AnnurClothes - Lookbook</title>
     <meta name="description" content="Целомудрие и скромность в женской одедже от Россиийского бренда ANNURCLOTHES">
     <meta name="keywords" content="одежда,мусульманская,хиджаб,clothes,muslim">
     <link rel="icon" type="image/svg+xml" href="./assets/Logo.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -240,54 +241,107 @@
             <a href="cart.html" role="button">Корзина</a>
         </div>
     </header>
-    <main>
-        <section class="item-section-info wrapper">
-            <div class="item-section-info__images-wrapper">
-                <div class="item-section-info__images">
-                    <img width="120" height="120" src="./assets/item-info/1.png" alt="item image" class="item-section-info__img">
-                    <img width="120" height="120" src="./assets/item-info/2.png" alt="item image" class="item-section-info__img">
-                    <img width="120" height="120" src="./assets/item-info/3.png" alt="item image" class="item-section-info__img">
-                </div>
-                <div class="item-section-info__big-img-wrapper">
-                    <img class="item-section-info__big-img" src="./assets/item-info/image-big.png" alt="Big item img">
-                </div>
-            </div>
-            <div class="item-section-info__data">
-                <h2 class="item-section-info__title">Шарф шелковый</h2>
-                <p class="item-section-info__price">3 500 <span class="item-section-info__price-text">P</span></p>
-                <p class="item-section-info__description">Шарф из чистого шелка 2,50 метра. <br>
-                    Этот вид считается самым тонким, прозрачным, очень нежным и изящным из всех натуральных шёлков. Изготовление этого шелка – исключительно ручная работа, которую выполняют по уникальной технологии.
-                    <br><br>
-                    Это очень сложная работа 🤍</p>
-                <div class="item-section-info__color-wrapper">
-                    <p class="item-section-info__color-title">Цвет: <span class="item-section-info__color-text">Бежевый</span></p>
-                    <div class="item-section-info__colors">
-                        <div id="1" class="item-section-info__color item-section-info__color--black"></div>
-                        <div id="2" class="item-section-info__color item-section-info__color--beige"></div>
-                        <div id="3" class="item-section-info__color item-section-info__color--light-beige"></div>
-                    </div>
-                </div>
-                <div class="item-section-info__buttons">
-                    <a href="#" class="item-section-info__btn primary-btn">
-                        Добавить в корзину
-                    </a>
-                    <a href="#" class="item-section-info__btn primary-btn primary-btn--text">
-                        Добавить в Избранное
-                    </a>
-                </div>
-                <div class="item-section-info__ad">
-                    <div class="item-section-info__ad primary-ad-card">
-                        <img class="primary-ad-card__img" src="./assets/item-info/3.png" alt="ad image">
-                        <div class="primary-ad-card__content">
-                            <h2 class="primary-ad-card__title">Вы можете приобрести этот товар в комплекте с балаклавой</h2>
-                            <p class="primary-ad-card__subtitle">Комплект балаклава и шарф</p>
-                            <p class="primary-ad-card__price">9 000 <span class="primary-ad-card__price-text">₽</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+    <div class="breadcrumb breadcrumb--mobile wrapper">
+        <a href="#" class="breadcrumb__link">
+            <p class="breadcrumb__item breadcrumb__title">Лукбук</p>
+        </a>
+    </div>
+    <!-- Slider main container -->
+    <div class="swiper" id="breadcrumb-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <a href="lookbook.html" class="breadcrumb__link">
+                <p class="breadcrumb__item breadcrumb__title">Весна</p>
+                <span class="breadcrumb__divider"></span>
+                <p class="breadcrumb__item">лето 2019</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="lookbook-winter.html" class="breadcrumb__link breadcrumb__link--active">
+                <p class="breadcrumb__item breadcrumb__title">Осень</p>
+                <span class="breadcrumb__divider"></span>
+                <p class="breadcrumb__item">зима 2020</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="breadcrumb__link">
+                <p class="breadcrumb__item breadcrumb__title">Весна</p>
+                <span class="breadcrumb__divider"></span>
+                <p class="breadcrumb__item">Лето 2020</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="breadcrumb__link">
+                <p class="breadcrumb__item breadcrumb__title">Осень</p>
+                <span class="breadcrumb__divider"></span>
+                <p class="breadcrumb__item">зима 2021</p>
+            </a>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="breadcrumb-swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="breadcrumb-swiper-button-prev"></div>
+        <div class="breadcrumb-swiper-button-next"></div>
+    
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+  
+    <div class="breadcrumb breadcrumb--sm wrapper">
+        <a href="lookbook.html" class="breadcrumb__link">
+            <p class="breadcrumb__item breadcrumb__title">Весна</p>
+            <span class="breadcrumb__divider"></span>
+            <p class="breadcrumb__item">лето 2019</p>
+        </a>
+        <a href="lookbook-winter.html" class="breadcrumb__link breadcrumb__link--active">
+            <p class="breadcrumb__item breadcrumb__title">Осень</p>
+            <span class="breadcrumb__divider"></span>
+            <p class="breadcrumb__item">зима 2020</p>
+        </a>
+        <a href="#" class="breadcrumb__link">
+            <p class="breadcrumb__item breadcrumb__title">Весна</p>
+            <span class="breadcrumb__divider"></span>
+            <p class="breadcrumb__item">Лето 2020</p>
+        </a>
+        <a href="#" class="breadcrumb__link">
+            <p class="breadcrumb__item breadcrumb__title">Осень</p>
+            <span class="breadcrumb__divider"></span>
+            <p class="breadcrumb__item">зима 2021</p>
+        </a>
+    </div>
+    <div class="lookbook wrapper">
+        <div class="lookbook__box">
+            <img src="./assets/lookbook/vesna-leto/1.png" alt="lookbook img">
+        </div>
+        <div class="lookbook__box">
+            <img src="./assets/lookbook/vesna-leto/2.png" alt="lookbook img">
+        </div>
+        <div class="lookbook__box">
+            <img src="./assets/lookbook/vesna-leto/3.png" alt="lookbook img">
+        </div>
+        <div class="lookbook__box">
+            <img src="./assets/lookbook/vesna-leto/4.png" alt="lookbook img">
+        </div>
+        <div class="lookbook__box">
+            <img src="./assets/lookbook/vesna-leto/5.png" alt="lookbook img">
+        </div>
+        <div class="lookbook__box">
+            <img src="./assets/lookbook/vesna-leto/6.png" alt="lookbook img">
+        </div>
+        <div class="lookbook__box">
+            <img src="./assets/lookbook/vesna-leto/7.png" alt="lookbook img">
+        </div>
+        <div class="lookbook__box">
+            <img src="./assets/lookbook/vesna-leto/8.png" alt="lookbook img">
+        </div>
+        <div class="lookbook__box">
+            <img src="./assets/lookbook/vesna-leto/9.png" alt="lookbook img">
+        </div>
+    </div>
     <footer class="footer">
         <nav class="footer-nav">
             <ul class="footer-nav__list">
@@ -317,6 +371,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="nav.js"></script>
-    <script src="item-card.js"></script>
+    <script src="breadcrumb.js"></script>
 </body>
 </html>
