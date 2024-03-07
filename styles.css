@@ -230,6 +230,10 @@ body {
     font-size: var(--fs-300);
 }
 
+.primary-btn--xl {
+    padding-inline: 100px;
+}
+
 .primary-btn:hover {
     background: var(--clr-neutral-400);
     color: var(--clr-beige-400);
@@ -1926,10 +1930,11 @@ body {
     border-collapse: collapse;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1170px) {
     .cart {
-        display: block;
+        flex-direction: column;
     }
+
 }
 /* .wrapper {
 } */
@@ -2055,4 +2060,10 @@ body {
 
 .cart-delivery__radio-wrapper input[type="radio"]:checked ~ .cart-delivery__checkbox::after {
     transform: translate(-50%, -50%) scale(1);
+}
+
+@media screen and (max-width: 1170px) {
+    .cart-delivery {
+        border-radius: 12px;
+    }
 }
