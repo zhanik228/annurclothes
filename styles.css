@@ -1317,7 +1317,7 @@ body {
         overflow: hidden;
         display: -webkit-box;
         -webkit-box-orient: vertical;
-        -webkit-line-clamp: 4;
+        -webkit-line-clamp: 2;
         /* width: 250px; */
         /* height: 90px; */
     }
@@ -1360,7 +1360,7 @@ body {
 }
 
 .blog__description {
-    max-width: 652px;
+    /* max-width: 652px; */
     font-weight: 300;
     font-size: var(--fs-350);
 }
