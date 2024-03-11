@@ -298,7 +298,7 @@ body {
     justify-content: space-between;
     flex-direction: column;
     text-align: center;
-    padding-top: 78px;
+    padding-top: 40px;
     padding-bottom: 50px;
     transition: left .3s linear;
     z-index: 99;
@@ -334,6 +334,9 @@ body {
     .mobile-nav__list {
         gap: 15px;
     }
+    /* .mobile-nav__li {
+        font-size: var(--fs-200);
+    } */
 }
 
 .mobile-nav__link:hover {
@@ -351,6 +354,8 @@ body {
 .mobile-nav-toggle {
     cursor: pointer;
     display: none;
+    width: 24px;
+    height: 24px;
 }
 
 @media screen and (max-width: 900px) {
