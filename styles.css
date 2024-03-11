@@ -821,7 +821,6 @@ body {
 .balaclav-card {
     display: flex;
     flex-direction: column;
-    gap: 18px;
 }
 /* .balaclav-card__img-wrapper {
     
@@ -831,6 +830,7 @@ body {
     display: block;
     object-fit: cover;
     object-position: center;
+    margin-bottom: 18px;
 }
 .balaclav-card__colors-wrapper {
     display: flex;
@@ -839,6 +839,7 @@ body {
 .balaclav-card__colors {
     display: flex;
     gap: 4px;
+    margin-bottom: 5px;
 }
 .balaclav-card__color {
     width: 24px;
