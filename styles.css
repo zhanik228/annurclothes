@@ -1758,7 +1758,7 @@ body {
 .profile-nav__link {
     display: block;
     padding: 10.5px 0;
-    font-size: var(--fs-300);
+    font-size: var(--fs-250);
     text-transform: uppercase;
     text-wrap: nowrap;
 }
