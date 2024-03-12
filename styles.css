@@ -1116,7 +1116,7 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    max-height: calc(1000px);
+    /* max-height: calc(1000px); */
 }
 
 .lookbook__wrapper {
