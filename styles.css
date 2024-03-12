@@ -1286,6 +1286,8 @@ body {
 #blogs-swiper {
     margin-inline: 18px;
     padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
 }
 
 #blogs-swiper .swiper-slide {
@@ -1488,6 +1490,7 @@ body {
     background: rgba(89, 89, 89, 0.5);
     height: 100%;
     width: 100%;
+    border-radius: 8px;
 }
 
 .about-card__img {
