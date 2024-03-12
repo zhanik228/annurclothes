@@ -1113,12 +1113,23 @@ body {
 }
 /* lookbook */
 .lookbook {
+    display: flex;
+    justify-content: center;
     width: 100%;
+    max-height: calc(1000px);
+}
+
+.lookbook__wrapper {
     columns: 5;
     column-gap: 6px;
     break-inside: avoid;
-    max-height: calc(100svh - 77px - 58px - -57px);
 }
+
+/* @media screen and (min-width: 1852px) {
+    .lookbook__wrapper {
+        max-width: 100%;
+    }
+} */
 
 @media screen and (max-width: 1090px) {
     .lookbook {
