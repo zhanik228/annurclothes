@@ -1116,6 +1116,8 @@ body {
     width: 100%;
     columns: 5;
     column-gap: 6px;
+    break-inside: avoid;
+    max-height: calc(100svh - 77px - 58px - -57px);
 }
 
 @media screen and (max-width: 1090px) {
@@ -1232,16 +1234,19 @@ body {
 /* .wrapper {
 } */
 .blogs__img-wrapper {
-    height: 800px;
+    /* height: 800px; */
+    width: 80%;
 }
 .blogs__img {
     height: 100%;
+    max-width: 100%;
 }
 .blogs__content {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     gap: 40px;
+    width: 70%;
 }
 
 @media screen and (max-width: 1300px) {
