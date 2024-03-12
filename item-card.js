@@ -2,6 +2,7 @@ const textContainer = document.querySelector('.item-section-info__color-text')
 const colors = document.querySelectorAll('.item-section-info__color')
 const defaultColor = document.querySelector('.item-section-info__color--beige')
 
+// choose colors
 const chosenColor = 'Бежевый'
 
 function changeColor(color) {
@@ -32,5 +33,23 @@ colors.forEach((color) => {
                     event.target.classList.add('item-section-info__color--selected')
                 break;
         }
+    })
+})
+
+// choose img
+const bigImg = document.querySelector('.item-section-info__big-img')
+const itemImages = document.querySelectorAll('.item-section-info__img')
+
+itemImages.forEach((image) => {
+    image.addEventListener('click', (event) => {
+        bigImg.src = event.target.src
+        
+        itemImages.forEach((image) => {
+            if (image.classList.contains('item-section-info__img--selected')) {
+                image.classList.remove('item-section-info__img--selected')
+            }
+        })
+
+        event.target.classList.add('item-section-info__img--selected')
     })
 })
