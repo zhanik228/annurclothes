@@ -1131,7 +1131,7 @@ body {
     }
 } */
 
-@media screen and (max-width: 1090px) {
+/* @media screen and (max-width: 1090px) {
     .lookbook__wrapper {
         columns: 3;
     }
@@ -1141,7 +1141,7 @@ body {
     .lookbook__wrapper {
         columns: 2;
     }
-}
+} */
 
 /* @media screen and (max-width: 480px) {
     .lookbook {
