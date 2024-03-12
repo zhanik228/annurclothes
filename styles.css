@@ -1854,13 +1854,22 @@ body {
 }
 .loyal-system__info-description {
     line-height: 1.14;
+    font-weight: 300;
+    font-size: var(--fs-350);
 }
 /* .loyal-system__discount-wrapper {
 }
+.loyal-system__progress {} */
+
 .loyal-system__discount {
+    font-size: var(--fs-470);
+    font-weight: 300;
 }
 
-.loyal-system__progress {} */
+#loyal-system-output {
+    font-size: var(--fs-470);
+    font-weight: 400;
+}
 
 .loyal-system__progress-bar {
     position: relative;
@@ -1948,7 +1957,7 @@ body {
 .loyal-system-bar {
     position: absolute;
     top: 48%;
-    width: 3%;
+    width: 15%;
     height: 6px;
     background: var(--clr-neutral-400);
 }
