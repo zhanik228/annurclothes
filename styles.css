@@ -1241,6 +1241,12 @@ body {
     align-items: center;
     gap: 100px;
 }
+
+@media screen and (max-width: 900px) {
+    .blogs {
+        align-items: start;
+    }
+}
 /* .wrapper {
 } */
 .blogs__img-wrapper {
@@ -1498,6 +1504,7 @@ body {
 .about-card__img {
     width: 100%;
     border-radius: 8px;
+    display: block;
 }
 .about-card__content {
     position: absolute;
