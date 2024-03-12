@@ -1113,13 +1113,10 @@ body {
 }
 /* lookbook */
 .lookbook {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     width: 100%;
     /* max-height: calc(1000px); */
-}
-
-.lookbook__wrapper {
     columns: 5;
     column-gap: 6px;
     break-inside: avoid;
@@ -1132,13 +1129,13 @@ body {
 } */
 
 @media screen and (max-width: 1090px) {
-    .lookbook__wrapper {
+    .lookbook {
         columns: 3;
     }
 }
 
 @media screen and (max-width: 630px) {
-    .lookbook__wrapper {
+    .lookbook {
         columns: 2;
     }
 }
