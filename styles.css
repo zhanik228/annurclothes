@@ -555,12 +555,19 @@ body {
     width: calc(100% - 36px);
     /* margin-bottom: 100px; */
     height: 620px;
+    display: none;
 }
 
 @media screen and (max-width: 300px) {
     #reviews-swiper {
         width: 100%;
         height: 620px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #reviews-swiper {
+        display: block;
     }
 }
 
@@ -695,8 +702,8 @@ body {
     display: flex;
     align-items: center;
     gap: 30px;
-    margin-bottom: 30px;
-    padding-block: 12px;
+    /* margin-bottom: 30px; */
+    padding-bottom: 12px;
 }
 
 /* @media screen and (max-width: 380px) {
@@ -789,8 +796,9 @@ body {
 }
 
 /* balaclav section */
-/* .balaclavs {
-} */
+.balaclavs {
+    padding-bottom: 10px;
+}
 .balaclavs-card-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -947,7 +955,7 @@ body {
     object-position: center;
 }
 .item-section-info__data {
-    padding: 87px 0px;
+    /* padding: 87px 0px; */
     width: 40%;
 }
 
@@ -963,6 +971,7 @@ body {
 .item-section-info__title {
     font-size: var(--fs-700);
     font-weight: 300;
+    margin-bottom: 50px;
 }
 
 @media screen and (max-width: 900px) {
@@ -973,6 +982,7 @@ body {
 .item-section-info__price {
     font-size: var(--fs-500);
     font-weight: 300;
+    margin-bottom: 50px;
 }
 .item-section-info__price-text {
     color: var(--clr-neutral-700);
@@ -1174,13 +1184,26 @@ body {
 
 /* reviews */
 .reviews {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
     width: 100%;
     column-gap: 6px;
     row-gap: 5px;
+}
+
+.reviews__img {
+    width: 100%;
+}
+
+.reviews__img:last-child:nth-child(3n - 1) {
+    grid-column-end: -3;
+}
+
+.reviews__img:nth-last-child(2):nth-child(3n + 1) {
+    grid-column-end: -4;
 }
 
 @media screen and (max-width: 900px) {
@@ -1355,6 +1378,14 @@ body {
     .blogs__img {
         width: 100%;
     }
+    .blogs__title {
+        text-overflow: ellipsis;
+        white-space: wrap;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+    }
     .blogs__description {
         text-overflow: ellipsis;
         white-space: wrap;
@@ -1364,6 +1395,13 @@ body {
         -webkit-line-clamp: 2;
         /* width: 250px; */
         /* height: 90px; */
+    }
+    .blogs__content .primary-btn {
+        display: block;
+        width: 100%;
+    }
+    .blogs__content {
+        width: 100%;
     }
     .blogs-swiper-button {
         width: 30px;
