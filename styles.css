@@ -412,6 +412,7 @@ body {
 } */
 .mobile-subnav__item {
     margin-bottom: 24px;
+    width: 200px;
 }
 .subnav__link {
     font-size: var(--fs-200);
