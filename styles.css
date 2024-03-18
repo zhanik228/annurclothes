@@ -1154,6 +1154,27 @@ body {
     break-inside: avoid;
 }
 
+.lookbook--mobile {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.lookbook--mobile-wrapper {
+    display: none;
+    gap: 4.22px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .lookbook--mobile-wrapper {
+        display: flex;
+    }
+    .lookbook {
+        display: none;
+    }
+}
+
 /* @media screen and (min-width: 1852px) {
     .lookbook__wrapper {
         max-width: 100%;
@@ -2110,19 +2131,28 @@ body {
 }
 .cart-item-card {
     display: flex;
-    gap: 18px;
+    gap: 10px;
 }
-/* .cart-item-card__content {
-} */
+.cart-item-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 .cart-item-card__title {
     font-size: var(--fs-300);
     font-weight: 300;
     text-transform: uppercase;
-    margin-bottom: 18px;
+    /* margin-bottom: 18px; */
 }
 .cart-table__count {
     font-size: var(--fs-450);
     font-weight: 300;
+    display: flex;
+    gap: 5px;
+}
+
+.cart-table__counter {
+    font-size: 28px;
 }
 
 .card-item-card__price {
