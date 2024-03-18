@@ -817,6 +817,12 @@ body {
 }
 .balaclavs-card-grid {
     display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 58.4px;
+}
+
+.balaclavs-card-grid--lg {
+    display: grid;
     grid-template-columns: repeat(7, 9%);
     gap: 58.4px;
 }
