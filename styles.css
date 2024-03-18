@@ -795,7 +795,7 @@ body {
         overflow-x: auto;
         overflow-y: hidden;
         padding: 18px 18px;
-        gap: 10px;
+        gap: 15px;
     }
     .breadcrumb--sm::-webkit-scrollbar {
         height: 0;
@@ -1926,7 +1926,7 @@ body {
 
 @media screen and (max-width: 900px) {
     .profile-nav__list {
-        gap: 10px;
+        gap: 15px;
     }
 }
 /* .profile-nav__item {
