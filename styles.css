@@ -801,7 +801,7 @@ body {
 }
 .balaclavs-card-grid {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(7, 9%);
     gap: 58.4px;
 }
 
@@ -810,7 +810,7 @@ body {
     .balaclavs-card-grid {
         grid-template-columns: repeat(5, 1fr);
     }
-}
+} */
 
 @media screen and (max-width: 950px) {
     .balaclavs-card-grid {
@@ -820,7 +820,7 @@ body {
     .breadcrumb {
         margin-bottom: 0;
     }
-} */
+}
 
 @media screen and (max-width: 620px) {
     .balaclavs-card-grid {
@@ -896,12 +896,12 @@ body {
 }
 
 
-/* .balaclav-card__price {
-} */
+.balaclav-card__price {
+    white-space: nowrap;
+}
 
 .balaclav-card__price-text {
     color: var(--clr-neutral-500);
-    white-space: nowrap;
     overflow: hidden;
 }
 
@@ -1444,12 +1444,15 @@ body {
     font-weight: 300;
     font-size: var(--fs-470);
     letter-spacing: 0.05em;
+    text-align: center;
 }
 
 .blog__description {
     /* max-width: 652px; */
     font-weight: 300;
     font-size: var(--fs-350);
+    margin: 0 auto;
+    width: 70%;
 }
 
 @media screen and (max-width: 900px) {
