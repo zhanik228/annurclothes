@@ -801,11 +801,12 @@ body {
 }
 .balaclavs-card-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     gap: 58.4px;
 }
 
-@media screen and (max-width: 1116px) {
+
+/* @media screen and (max-width: 1116px) {
     .balaclavs-card-grid {
         grid-template-columns: repeat(5, 1fr);
     }
@@ -819,7 +820,7 @@ body {
     .breadcrumb {
         margin-bottom: 0;
     }
-}
+} */
 
 @media screen and (max-width: 620px) {
     .balaclavs-card-grid {
@@ -900,6 +901,8 @@ body {
 
 .balaclav-card__price-text {
     color: var(--clr-neutral-500);
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .item-section-info {
@@ -957,6 +960,8 @@ body {
 .item-section-info__data {
     /* padding: 87px 0px; */
     width: 40%;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 @media screen and (max-width: 900px) {
@@ -971,7 +976,7 @@ body {
 .item-section-info__title {
     font-size: var(--fs-700);
     font-weight: 300;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 900px) {
@@ -982,7 +987,7 @@ body {
 .item-section-info__price {
     font-size: var(--fs-500);
     font-weight: 300;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 .item-section-info__price-text {
     color: var(--clr-neutral-700);
