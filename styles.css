@@ -791,9 +791,12 @@ body {
     }
     .breadcrumb--sm {
         /* display: none; */
-        overflow-x: hidden;
+        overflow-x: auto;
         overflow-y: hidden;
         padding: 18px 18px;
+    }
+    .breadcrumb--sm::-webkit-scrollbar {
+        height: 0;
     }
     .breadcrumb__item {
         font-size: var(--fs-200);
@@ -1952,10 +1955,10 @@ body {
         gap: 0;
     }
     .profile-nav {
-        overflow-x: hidden;
+        overflow-x: auto;
     }
-    .profile-nav__list {
-        overflow-x: hidden;
+    .profile-nav::-webkit-scrollbar {
+        height: 0;
     }
     .profile__content {
         width: 100%;

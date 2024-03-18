@@ -43,34 +43,34 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const tabsBox = document.querySelector('.breadcrumb--sm');
+// const tabsBox = document.querySelector('.breadcrumb--sm');
 
-let isDragging = false;
+// let isDragging = false;
 
-const dragging = (e) => {
-  if (!isDragging) return;
-  if (e.type === 'mousemove') {
-    tabsBox.scrollLeft -= e.movementX;
-  } else if (e.type === 'touchmove') {
-    const touch = e.touches[0];
-    const movementX = touch.clientX - touch.screenX;
-    tabsBox.scrollLeft -= movementX;
-  }
-};
+// const dragging = (e) => {
+//   if (!isDragging) return;
+//   if (e.type === 'mousemove') {
+//     tabsBox.scrollLeft -= e.movementX;
+//   } else if (e.type === 'touchmove') {
+//     const touch = e.touches[0];
+//     const movementX = touch.clientX - touch.screenX;
+//     tabsBox.scrollLeft -= movementX;
+//   }
+// };
 
-const dragStart = () => {
-  isDragging = true;
-};
+// const dragStart = () => {
+//   isDragging = true;
+// };
 
-const dragStop = () => {
-  isDragging = false;
-};
+// const dragStop = () => {
+//   isDragging = false;
+// };
 
-tabsBox.addEventListener('mousedown', dragStart);
-tabsBox.addEventListener('touchstart', dragStart);
+// tabsBox.addEventListener('mousedown', dragStart);
+// tabsBox.addEventListener('touchstart', dragStart);
 
-tabsBox.addEventListener('mousemove', dragging);
-tabsBox.addEventListener('touchmove', dragging);
+// tabsBox.addEventListener('mousemove', dragging);
+// tabsBox.addEventListener('touchmove', dragging);
 
-document.addEventListener('mouseup', dragStop);
-document.addEventListener('touchend', dragStop);
+// document.addEventListener('mouseup', dragStop);
+// document.addEventListener('touchend', dragStop);

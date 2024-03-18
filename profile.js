@@ -43,36 +43,3 @@ document.addEventListener("DOMContentLoaded", function () {
       swiper.update(); // Update swiper instance after changing the configuration
     });
   });
-
-
-  const tabsBox = document.querySelector('.profile-nav__list')
-
-  let isDragging = false
-  
-  const dragging = (e) => {
-    if (!isDragging) return
-    if (e.type === 'mousemove') {
-      tabsBox.scrollLeft -= e.movementX
-    } else if (e.type === 'touchmove') {
-      const touch = e.touches[0]
-      const movementX = touch.clientX - touch.screenX
-      tabsBox.scrollLeft -= movementX
-    }
-  }
-  
-  const dragStart = () => {
-    isDragging = true
-  }
-  
-  const dragStop = () => {
-    isDragging = false
-  }
-  
-  tabsBox.addEventListener('mousedown', dragStart)
-  tabsBox.addEventListener('touchstart', dragStart)
-  
-  tabsBox.addEventListener('mousemove', dragging)
-  tabsBox.addEventListener('touchmove', dragging)
-  
-  document.addEventListener('mouseup', dragStop)
-  document.addEventListener('touchend', dragStop)
