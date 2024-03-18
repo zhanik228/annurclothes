@@ -237,6 +237,14 @@ body {
     padding-inline: 100px;
 }
 
+@media screen and (max-width: 900px) {
+    .primary-btn--xl {
+        width: 100%;
+        padding-inline: 50px;
+        text-align: center;
+    }
+}
+
 .primary-btn:hover {
     background: var(--clr-neutral-400);
     color: var(--clr-beige-500);
@@ -2148,6 +2156,7 @@ body {
     font-size: var(--fs-450);
     font-weight: 300;
     display: flex;
+    justify-content: center;
     gap: 5px;
 }
 
@@ -2180,7 +2189,7 @@ body {
         flex-direction: column;
     }
     .cart-delivery {
-        padding: 20px 40px;
+        padding: 20px 18px;
     }
 }
 /* .wrapper {
