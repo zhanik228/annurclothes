@@ -1261,7 +1261,7 @@ body {
 .press-images {
     display: grid;
     gap: 12px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 304px);
 }
 
 @media screen and (max-width: 1272px) {
@@ -1269,6 +1269,20 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+.press-images__img {
+    width: 304px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* @media screen and (max-width: 900px) {
+    .press-images__img {
+        object-fit: contain;
+    }
+} */
 
 #press-swiper {
     display: none;
@@ -1294,7 +1308,7 @@ body {
 #press-swiper .swiper-wrapper .swiper-slide img {
     width: 341px;
     height: 529px;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
 }
 
