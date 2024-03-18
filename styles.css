@@ -790,13 +790,16 @@ body {
         margin-top: 50px;
     }
     .breadcrumb--sm {
-        display: none;
+        /* display: none; */
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding: 18px 18px;
     }
     .breadcrumb__item {
         font-size: var(--fs-200);
     }
     #breadcrumb-swiper {
-        display: flex;
+        /* display: flex; */
     }
     .breadcrumb__link {
         gap: 4px;
@@ -1949,14 +1952,17 @@ body {
         gap: 0;
     }
     .profile-nav {
-        display: none;
+        overflow-x: hidden;
+    }
+    .profile-nav__list {
+        overflow-x: hidden;
     }
     .profile__content {
         width: 100%;
     }
-    #profile-swiper {
+    /* #profile-swiper {
         display: block;
-    }
+    } */
 }
 
 #profile-swiper {

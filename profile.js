@@ -43,4 +43,22 @@ document.addEventListener("DOMContentLoaded", function () {
       swiper.update(); // Update swiper instance after changing the configuration
     });
   });
+
+
+  const tabsBox = document.querySelector('.profile-nav__list')
+
+  let isDragging = false
+  
+  const dragging = (e) => {
+    if (!isDragging) return
+    tabsBox.scrollLeft -= e.movementX
+  }
+  
+  const dragStop = () => {
+    isDragging = false
+  }
+  
+  tabsBox.addEventListener('mousedown', () => isDragging = true)
+  tabsBox.addEventListener('mousemove', dragging)
+  document.addEventListener('mouseup', dragStop)
   
