@@ -1295,10 +1295,27 @@ body {
 .blogs__img-wrapper {
     /* height: 800px; */
     width: 80%;
+    margin-left: 20px;
 }
+
+
+@media screen and (max-width: 900px) {
+    .blogs__img-wrapper {
+        margin-left: 0;
+    }
+}
+
+.blogs__img-wrapper picture {
+    display: block;
+    height: 100%;
+    border-radius: 12px;
+}
+
 .blogs__img {
     height: 100%;
     max-width: 100%;
+    /* display: block; */
+    border-radius: 12px;
 }
 .blogs__content {
     display: flex;
