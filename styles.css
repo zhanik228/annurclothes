@@ -1139,10 +1139,10 @@ body {
         gap: 4px;
         margin: 0 auto;
     } */
-    .item-section-info__big-img {
+    /* .item-section-info__big-img {
         width: 100%;
         height: 100%;
-    }
+    } */
     .item-section-info {
         height: calc(100svh - 77px - 57px);
         /* margin-top: 64px; */
