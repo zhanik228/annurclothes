@@ -825,16 +825,34 @@ body {
 
 .balaclavs-card-grid--lg {
     display: grid;
-    grid-template-columns: repeat(7, 9%);
-    gap: 58.4px;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 25px;
 }
 
 
-/* @media screen and (max-width: 1116px) {
-    .balaclavs-card-grid {
+@media screen and (max-width: 1300px) {
+    .balaclavs-card-grid--lg {
         grid-template-columns: repeat(5, 1fr);
     }
-} */
+}
+
+@media screen and (max-width: 920px) {
+    .balaclavs-card-grid--lg {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .balaclavs-card-grid--lg {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .balaclavs-card-grid--lg {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 @media screen and (max-width: 950px) {
     .balaclavs-card-grid {
@@ -870,6 +888,7 @@ body {
     display: block;
     object-fit: cover;
     object-position: center;
+    border-radius: 8px;
     margin-bottom: 18px;
 }
 .balaclav-card__colors-wrapper {
