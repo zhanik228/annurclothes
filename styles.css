@@ -1564,7 +1564,13 @@ body {
     
     .blog__img-wrapper img {
         width: 100%;
-    }   
+    }
+    .blog__title {
+        text-align: start;
+    }
+    .blog__description {
+        width: 100%;
+    }
 }
 
 /* contacts */
