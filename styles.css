@@ -1538,23 +1538,24 @@ body {
 
 .blog__content {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 40px;
+    width: 80%;
 }
 
 .blog__title {
     font-weight: 300;
     font-size: var(--fs-470);
     letter-spacing: 0.05em;
-    text-align: center;
 }
 
 .blog__description {
     /* max-width: 652px; */
     font-weight: 300;
     font-size: var(--fs-350);
-    margin: 0 auto;
-    width: 70%;
+    /* margin: 0 auto; */
+    /* width: 70%; */
 }
 
 @media screen and (max-width: 900px) {
@@ -1565,10 +1566,7 @@ body {
     .blog__img-wrapper img {
         width: 100%;
     }
-    .blog__title {
-        text-align: start;
-    }
-    .blog__description {
+    .blog__content {
         width: 100%;
     }
 }
