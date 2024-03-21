@@ -1608,7 +1608,7 @@ body {
 .contact-info {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 10px;
 }
 .contact__address {
     font-weight: 100;
