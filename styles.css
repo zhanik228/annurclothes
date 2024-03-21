@@ -1985,6 +1985,13 @@ body {
 .profile-nav {
     margin-bottom: 50px;
 }
+
+@media screen and (max-width: 900px) {
+    .profile-nav {
+        margin-bottom: 20px;
+    }
+}
+
 .profile-nav__list {
     display: flex;
     gap: 30px;
@@ -2076,11 +2083,20 @@ body {
 } */
 
 /* loyal system */
+.loyal-system {
+    width: 100%;
+}
 
 .loyal-system__title {
     margin-bottom: 50px;
     font-weight: 300;
     font-size: var(--fs-700);
+}
+
+@media screen and (max-width: 900px) {
+    .loyal-system__title {
+        font-size: var(--fs-600);
+    }
 }
 .loyal-system__info {
     display: flex;
