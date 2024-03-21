@@ -1490,6 +1490,8 @@ body {
     }
     .blogs__img {
         width: 100%;
+        object-fit: contain;
+        object-position: center;
     }
     .blogs__title {
         text-overflow: ellipsis;
